@@ -2,11 +2,21 @@ package com.photosynthesisstudio.refactorskyblock;
 
 import net.neoforged.neoforge.common.ModConfigSpec;
 
-public class RefactorSkyblockConfig {
-    private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
-    static final ModConfigSpec SPEC = BUILDER.build();
+import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblock.MODID;
 
-    public static final ModConfigSpec.IntValue TEST_NUMBER = BUILDER
-            .comment("A test number")
+public class RefactorSkyblockConfig {
+    public static final ModConfigSpec.Builder CLIENT = new ModConfigSpec.Builder();
+    public static final ModConfigSpec.Builder COMMON = new ModConfigSpec.Builder();
+    public static final ModConfigSpec.Builder SERVER = new ModConfigSpec.Builder();
+
+    private static final String NAME_KEY = MODID + ".configuration.%s";
+
+    public static final ModConfigSpec.IntValue TEST_NUMBER = CLIENT
+            .translation(NAME_KEY.formatted("testNumber"))
             .defineInRange("testNumber", 33, 0, Integer.MAX_VALUE);
+
+    public static final ModConfigSpec.IntValue INITIAL_FOOD_NUMBER = COMMON
+            .comment("If a new player logs into the world, give him the amount of food.")
+            .translation(NAME_KEY.formatted("initialFoodNumber"))
+            .defineInRange("initialFoodNumber", 64, 0, Integer.MAX_VALUE);
 }

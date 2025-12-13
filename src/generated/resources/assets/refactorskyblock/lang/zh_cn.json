@@ -1,0 +1,23 @@
+{
+  "generator.refactorskyblock.skyblock": "异构空岛",
+  "item.refactorskyblock.acacia_bark": "金合欢树皮",
+  "item.refactorskyblock.birch_bark": "白桦树皮",
+  "item.refactorskyblock.bone_bowl": "骨碗",
+  "item.refactorskyblock.cherry_bark": "樱花树皮",
+  "item.refactorskyblock.crimson_bark": "绯红树皮",
+  "item.refactorskyblock.dark_oak_bark": "深色橡木树皮",
+  "item.refactorskyblock.jungle_bark": "丛林树皮",
+  "item.refactorskyblock.mangrove_bark": "红树树皮",
+  "item.refactorskyblock.oak_bark": "橡木树皮",
+  "item.refactorskyblock.pale_oak_bark": "苍白橡木树皮",
+  "item.refactorskyblock.plant_fertilizer": "植物肥",
+  "item.refactorskyblock.spruce_bark": "云杉树皮",
+  "item.refactorskyblock.stone_arrow": "石箭",
+  "item.refactorskyblock.stone_nugget": "石粒",
+  "item.refactorskyblock.warped_bark": "扭曲树皮",
+  "item.refactorskyblock.water_bone_bowl": "盛有水的骨碗",
+  "itemGroup.refactorskyblock.items": "异构空岛 | 物品",
+  "refactorskyblock.configuration.initialFoodNumber": "初始化食物数",
+  "refactorskyblock.configuration.initialFoodNumber.tooltip": "当有新玩家加入世界时, 给予他这个数量的食物.",
+  "refactorskyblock.description": "这里写描述"
+}
