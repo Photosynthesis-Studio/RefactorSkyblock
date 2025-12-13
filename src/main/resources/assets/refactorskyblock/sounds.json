@@ -1,0 +1,18 @@
+{
+  "item.bone_bowl.empty": {
+    "sounds": [
+      "minecraft:item/bucket/empty1",
+      "minecraft:item/bucket/empty2",
+      "minecraft:item/bucket/empty3"
+    ],
+    "subtitle": "subtitles.item.bone_bowl.empty"
+  },
+  "item.bone_bowl.fill": {
+    "sounds": [
+      "minecraft:item/bucket/fill1",
+      "minecraft:item/bucket/fill2",
+      "minecraft:item/bucket/fill3"
+    ],
+    "subtitle": "subtitles.item.bone_bowl.fill"
+  }
+}

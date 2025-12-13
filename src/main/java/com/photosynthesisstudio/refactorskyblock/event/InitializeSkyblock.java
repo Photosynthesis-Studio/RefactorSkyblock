@@ -1,5 +1,6 @@
 package com.photosynthesisstudio.refactorskyblock.event;
 
+import com.mojang.serialization.Codec;
 import com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.Identifier;
@@ -15,12 +16,20 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.LevelData;
 import net.minecraft.world.level.storage.WritableLevelData;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.level.LevelEvent;
+
+import java.util.function.Supplier;
 
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblock.*;
 
 public class InitializeSkyblock {
+    public static final Supplier<AttachmentType<Boolean>> PLAYER_INITIALIZE = ATTACHMENT_REG.register(
+            "initialize", () -> AttachmentType.builder(() -> false)
+                    .serialize(Codec.BOOL.fieldOf("initialize")).build()
+    );
+
     @SubscribeEvent
     public void onCreateSpawnPosition(LevelEvent.CreateSpawnPosition event) {
         Level level = (Level) event.getLevel();

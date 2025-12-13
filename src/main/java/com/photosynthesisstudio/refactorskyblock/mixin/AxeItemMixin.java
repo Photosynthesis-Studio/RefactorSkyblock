@@ -78,22 +78,22 @@ public class AxeItemMixin {
     )
     private void useOn(UseOnContext context, CallbackInfoReturnable<InteractionResult> cir) {
         Level mlevel = context.getLevel();
-        BlockPos mblockpos = context.getClickedPos();
+        BlockPos mblockPos = context.getClickedPos();
         Player mplayer = context.getPlayer();
 
         boolean hasSilkTouch = EnchantmentHelper.getTagEnchantmentLevel(
                 mlevel.registryAccess().getOrThrow(Enchantments.SILK_TOUCH),
                 mplayer.getMainHandItem()) != 0;
 
-        Optional<ItemStack> barkDrop = getBarkDrop(mlevel.getBlockState(mblockpos).getBlock(), mlevel, hasSilkTouch);
+        Optional<ItemStack> barkDrop = getBarkDrop(mlevel.getBlockState(mblockPos).getBlock(), mlevel, hasSilkTouch);
 
 
         if (barkDrop.isPresent()) {
             mlevel.addFreshEntity(new ItemEntity(
                     mlevel,
-                    mblockpos.getX() + 0.5,
-                    mblockpos.getY() + 0.5,
-                    mblockpos.getZ() + 0.5,
+                    mblockPos.getX() + 0.5,
+                    mblockPos.getY() + 0.5,
+                    mblockPos.getZ() + 0.5,
                     barkDrop.get()
             ));
         }

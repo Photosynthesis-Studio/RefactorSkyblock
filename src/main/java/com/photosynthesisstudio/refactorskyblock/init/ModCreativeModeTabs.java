@@ -36,9 +36,10 @@ public class ModCreativeModeTabs {
                         output.accept(WARPED_BARK);
 
                         output.accept(BONE_BOWL);
+                        output.accept(BONE_BOWL_WATER);
+
                         output.accept(STONE_ARROW);
                         output.accept(STONE_NUGGET);
-                        output.accept(WATER_BONE_BOWL);
                         }, () -> PLANT_FERTILIZER.get().getDefaultInstance()
             ));
 

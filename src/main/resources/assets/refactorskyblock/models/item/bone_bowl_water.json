@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "refactorskyblock:item/water_bone_bowl"
+    "layer0": "refactorskyblock:item/bone_bowl_water"
   }
 }

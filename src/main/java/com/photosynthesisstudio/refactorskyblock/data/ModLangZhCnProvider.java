@@ -1,8 +1,10 @@
 package com.photosynthesisstudio.refactorskyblock.data;
 
-import com.photosynthesisstudio.refactorskyblock.RefactorSkyblock;
 import com.photosynthesisstudio.refactorskyblock.init.ModCreativeModeTabs;
+import com.photosynthesisstudio.refactorskyblock.init.ModSoundEvents;
+import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -29,7 +31,7 @@ public class ModLangZhCnProvider extends LanguageProvider {
         add(PLANT_FERTILIZER, "植物肥");
 
         add(BONE_BOWL, "骨碗");
-        add(WATER_BONE_BOWL, "盛有水的骨碗");
+        add(BONE_BOWL_WATER, "盛有水的骨碗");
 
         add(STONE_ARROW, "石箭");
         add(STONE_NUGGET, "石粒");
@@ -47,6 +49,9 @@ public class ModLangZhCnProvider extends LanguageProvider {
         add(WARPED_BARK, "扭曲树皮");
 
         addCreativeModeTab(ModCreativeModeTabs.ITEMS_TAB, "异构空岛 | 物品");
+
+        addSound(ModSoundEvents.BONE_BOWL_EMPTY, "骨碗：倒空");
+        addSound(ModSoundEvents.BONE_BOWL_FILL, "骨碗：装满");
     }
 
     public <R, T extends R> void addCreativeModeTab(DeferredHolder<R, T> itemGroup, String name) {
@@ -71,5 +76,9 @@ public class ModLangZhCnProvider extends LanguageProvider {
         return configuration
                 .replaceAll("\\[", "")
                 .replaceAll("]", "");
+    }
+
+    private void addSound(Holder<SoundEvent> sound, String name) {
+        add(sound.getRegisteredName().replaceAll(MODID + ":", "subtitles."), name);
     }
 }

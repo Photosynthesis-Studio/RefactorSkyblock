@@ -1,7 +1,10 @@
 package com.photosynthesisstudio.refactorskyblock.data;
 
 import com.photosynthesisstudio.refactorskyblock.init.ModCreativeModeTabs;
+import com.photosynthesisstudio.refactorskyblock.init.ModSoundEvents;
+import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -29,7 +32,7 @@ public class ModLangEnUsProvider extends LanguageProvider {
         add(PLANT_FERTILIZER, "Plant Fertilizer");
 
         add(BONE_BOWL, "Bone Bowl");
-        add(WATER_BONE_BOWL, "Water Bone Bowl");
+        add(BONE_BOWL_WATER, "Water Bone Bowl");
 
         add(STONE_ARROW, "Stone Arrow");
         add(STONE_NUGGET, "Stone Nugget");
@@ -47,6 +50,9 @@ public class ModLangEnUsProvider extends LanguageProvider {
         add(WARPED_BARK, "Warped Bark");
 
         addCreativeModeTab(ModCreativeModeTabs.ITEMS_TAB, "Refactor Skyblock | Items");
+
+        addSound(ModSoundEvents.BONE_BOWL_EMPTY, "Bone Bowl empties");
+        addSound(ModSoundEvents.BONE_BOWL_FILL, "Bone Bowl fills");
     }
 
     public <R, T extends R> void addCreativeModeTab(DeferredHolder<R, T> itemGroup, String name) {
@@ -71,5 +77,9 @@ public class ModLangEnUsProvider extends LanguageProvider {
         return configuration
                 .replaceAll("\\[", "")
                 .replaceAll("]", "");
+    }
+
+    private void addSound(Holder<SoundEvent> sound, String name) {
+        add(sound.getRegisteredName().replaceAll(MODID + ":", "subtitles."), name);
     }
 }
