@@ -1,0 +1,33 @@
+{
+  "parent": "refactorskyblock:story/root",
+  "criteria": {
+    "pickup_Dirt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dirt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.refactorskyblock.is_dirt.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:dirt"
+    },
+    "title": {
+      "translate": "advancements.refactorskyblock.is_dirt.title"
+    }
+  },
+  "requirements": [
+    [
+      "pickup_Dirt"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
