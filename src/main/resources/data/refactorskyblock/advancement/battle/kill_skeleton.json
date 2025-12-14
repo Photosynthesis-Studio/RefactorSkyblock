@@ -13,15 +13,13 @@
     "display": {
         "frame": "task",
         "title": {
-            "translate": "aaa",
-            "fallback": "你真是坏到骨子里了!"
+            "translate": "advancement.refactorskyblock.battle.kill_skeleton.title"
         },
         "announce_to_chat": true,
         "description": {
-            "translate": "aaa",
-            "fallback": "杀死一只骷髅证明你不是软骨头"
+            "translate": "advancement.refactorskyblock.battle.kill_skeleton.description"
         },
-        "show_toast": true,
+        "show_toast": false,
         "icon": {
             "id": "minecraft:skeleton_spawn_egg",
             "count": 1

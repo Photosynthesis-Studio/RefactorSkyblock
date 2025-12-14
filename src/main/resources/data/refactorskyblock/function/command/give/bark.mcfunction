@@ -1,0 +1,12 @@
+# 树皮
+give @s minecraft:stick[item_model="refactorskyblock:bark/acacia_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/birch_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/cherry_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/crimson_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/dark_oak_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/jungle_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/mangrove_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/oak_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/pale_oak_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/spruce_bark"]
+give @s minecraft:stick[item_model="refactorskyblock:bark/warped_bark"]

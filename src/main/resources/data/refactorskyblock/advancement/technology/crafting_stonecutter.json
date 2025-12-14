@@ -11,13 +11,11 @@
     "display": {
         "frame": "task",
         "title": {
-            "translate": "aaa",
-            "fallback": "切木机还是切石机?"
+            "translate": "advancement.refactorskyblock.minecraft.crafting_stonecutter.title"
         },
         "announce_to_chat": false,
         "description": {
-            "translate": "aaa",
-            "fallback": "科技第二步，利用切石机增加产量，并制作更多物品，使用2个铁粒，一个石头，一个皮革来合成"
+            "translate": "advancement.refactorskyblock.minecraft.crafting_stonecutter.description"
         },
         "show_toast": false,
         "icon": {

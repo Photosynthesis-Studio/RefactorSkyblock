@@ -1,0 +1,31 @@
+{
+  "parent": "refactorskyblock:minecraft/crafting_wooden_hoe",
+  "criteria": {
+    "crafting_wooden_pickaxe": {
+      "conditions": {
+        "recipe_id": "refactorskyblock:crafting/tools/tools/wood/wooden_pickaxe"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.crafting_wooden_pickaxe.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:wooden_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.crafting_wooden_pickaxe.title"
+    }
+  },
+  "requirements": [
+    [
+      "crafting_wooden_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

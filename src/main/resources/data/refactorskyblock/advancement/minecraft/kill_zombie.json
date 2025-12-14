@@ -1,5 +1,5 @@
 {
-    "parent": "refactorskyblock:minecraft/crafting_wooden_hoe",
+    "parent": "refactorskyblock:minecraft/crafting_planks",
     "criteria": {
         "kill_zombie": {
             "trigger": "minecraft:player_killed_entity",
@@ -13,17 +13,15 @@
     "display": {
         "frame": "task",
         "title": {
-            "translate": "aaa",
-            "fallback": "暗面血肉"
+            "translate": "advancement.refactorskyblock.minecraft.kill_zombie.title"
         },
         "announce_to_chat": true,
         "description": {
-            "translate": "aaa",
-            "fallback": "杀死一只僵尸并获得它的腐肉，使用黑夜血肉作为资源。使用1个木板和一个木棍来合成木剑"
+            "translate": "advancement.refactorskyblock.minecraft.kill_zombie.description"
         },
         "show_toast": false,
         "icon": {
-            "id": "minecraft:wooden_sword",
+            "id": "minecraft:rotten_flesh",
             "count": 1
         },
         "hidden": false

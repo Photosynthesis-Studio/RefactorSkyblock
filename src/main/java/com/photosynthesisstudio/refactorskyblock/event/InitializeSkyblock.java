@@ -131,6 +131,7 @@ public class InitializeSkyblock {
             // 给物品
             player.addItem(new ItemStack(Items.BREAD, RefactorSkyblockConfig.INITIAL_FOOD_NUMBER.get()));
             player.addItem(new ItemStack(Items.RED_BUNDLE));
+            player.addItem(new ItemStack(Items.SPYGLASS));
 
             // 能玩模式
             if (RefactorSkyblockConfig.CAN_PLAY_MODE.get()) {

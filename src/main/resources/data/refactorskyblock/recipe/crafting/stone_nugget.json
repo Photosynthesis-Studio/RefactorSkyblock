@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "stone_nugget",
+  "show_notification": false,
+  "key": {
+    "#": "minecraft:leather",
+    "&": "refactorskyblock:stone_arrow"
+  },
+  "pattern": [
+    "#&"
+  ],
+  "result": {
+    "id": "refactorskyblock:stone_nugget",
+    "count": 1
+  }
+}

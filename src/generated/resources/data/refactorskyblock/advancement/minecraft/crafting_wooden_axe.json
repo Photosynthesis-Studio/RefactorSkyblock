@@ -1,0 +1,31 @@
+{
+  "parent": "refactorskyblock:minecraft/minecraft",
+  "criteria": {
+    "crafting_wooden_axe": {
+      "conditions": {
+        "recipe_id": "refactorskyblock:crafting/tools/tools/wood/wooden_axe"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.crafting_wooden_axe.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:wooden_axe"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.crafting_wooden_axe.title"
+    }
+  },
+  "requirements": [
+    [
+      "crafting_wooden_axe"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

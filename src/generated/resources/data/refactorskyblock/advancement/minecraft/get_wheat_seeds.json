@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/crafting_planks",
+  "criteria": {
+    "get_wheat_seeds": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wheat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_wheat_seeds.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:wheat_seeds"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_wheat_seeds.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_wheat_seeds"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

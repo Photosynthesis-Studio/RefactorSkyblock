@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/get_melon_seeds",
+  "criteria": {
+    "get_beetroot_seeds": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:beetroot_seeds"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_beetroot_seeds.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:beetroot_seeds"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_beetroot_seeds.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_beetroot_seeds"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

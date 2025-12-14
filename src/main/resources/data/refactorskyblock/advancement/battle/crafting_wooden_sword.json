@@ -11,15 +11,13 @@
         "background": "block/stone_bricks",
         "frame": "task",
         "title": {
-            "translate": "aaa",
-            "fallback": "战斗"
+            "translate": "advancement.refactorskyblock.battle.crafting_wooden_sword.title"
         },
         "announce_to_chat": true,
         "description": {
-            "translate": "aaa",
-            "fallback": "合成了一把木剑，你会发现方块和实体交互距离变短了！你没感觉错,初始值分别为2.5和1.5，所有武器有特殊距离，战斗需要使用武器！"
+            "translate": "advancement.refactorskyblock.battle.crafting_wooden_sword.description"
         },
-        "show_toast": true,
+        "show_toast": false,
         "icon": {
             "id": "minecraft:wooden_sword",
             "count": 1

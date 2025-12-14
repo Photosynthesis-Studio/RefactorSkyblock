@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/crafting_leather",
+  "criteria": {
+    "get_stone_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "refactorskyblock:stone_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_stone_nugget.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "refactorskyblock:stone_nugget"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_stone_nugget.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_stone_nugget"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

@@ -13,15 +13,13 @@
     "display": {
         "frame": "task",
         "title": {
-            "translate": "aaa",
-            "fallback": "腿越多生物越邪恶"
+            "translate": "advancement.refactorskyblock.battle.kill_spider.title"
         },
         "announce_to_chat": true,
         "description": {
-            "translate": "aaa",
-            "fallback": "杀死一只蜘蛛证明你没有蜘蛛恐惧症"
+            "translate": "advancement.refactorskyblock.battle.kill_spider.description"
         },
-        "show_toast": true,
+        "show_toast": false,
         "icon": {
             "id": "minecraft:spider_spawn_egg",
             "count": 1

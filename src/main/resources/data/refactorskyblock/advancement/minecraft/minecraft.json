@@ -8,12 +8,11 @@
         "background": "minecraft:block/oak_planks",
         "frame": "task",
         "title": {
-            "translate": "advancements.story.root.title"
+            "translate": "advancement.refactorskyblock.minecraft.minecraft.title"
         },
         "announce_to_chat": true,
         "description": {
-            "translate": "aaa",
-            "fallback": "欢迎!\n奖励：面包*64 红色收纳袋*1\n望远镜*1"
+            "translate": "advancement.refactorskyblock.minecraft.placed_wheat_seeds.description"
         },
         "show_toast": false,
         "icon": {
@@ -21,5 +20,10 @@
             "count": 1
         },
         "hidden": false
+    },
+    "rewards": {
+        "loot": [
+            "refactorskyblock:advancement/minecraft"
+        ]
     }
 }

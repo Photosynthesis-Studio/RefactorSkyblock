@@ -16,13 +16,11 @@
         "background": "block/test_block_start",
         "frame": "task",
         "title": {
-            "translate": "aaa",
-            "fallback": "科技"
+            "translate": "advancement.refactorskyblock.technology.technology.title"
         },
         "announce_to_chat": false,
         "description": {
-            "translate": "aaa",
-            "fallback": "记录你的科技进度"
+            "translate": "advancement.refactorskyblock.technology.technology.description"
         },
         "show_toast": false,
         "icon": {

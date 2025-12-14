@@ -13,15 +13,13 @@
     "display": {
         "frame": "task",
         "title": {
-            "translate": "aaa",
-            "fallback": "杀死姜丝"
+            "translate": "advancement.refactorskyblock.battle.kill_zombie.title"
         },
         "announce_to_chat": true,
         "description": {
-            "translate": "aaa",
-            "fallback": "杀死一只僵尸证明你的石粒"
+            "translate": "advancement.refactorskyblock.battle.kill_zombie.description"
         },
-        "show_toast": true,
+        "show_toast": false,
         "icon": {
             "id": "minecraft:zombie_spawn_egg",
             "count": 1

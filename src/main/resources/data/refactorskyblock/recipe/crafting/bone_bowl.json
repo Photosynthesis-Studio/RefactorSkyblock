@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bone_bowl",
+  "show_notification": false,
+  "key": {
+    "#": "minecraft:bone"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "refactorskyblock:bone_bowl",
+    "count": 1
+  }
+}

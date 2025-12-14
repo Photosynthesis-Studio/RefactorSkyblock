@@ -16,13 +16,11 @@
     "display": {
         "frame": "task",
         "title": {
-            "translate": "aaa",
-            "fallback": "光合作用"
+            "translate": "advancement.refactorskyblock.minecraft.placed_wheat_seeds.title"
         },
         "announce_to_chat": false,
         "description": {
-            "translate": "aaa",
-            "fallback": "种植小麦，开始科技的第一步，也就是 光 合 作 用~"
+            "translate": "advancement.refactorskyblock.minecraft.placed_wheat_seeds.description"
         },
         "show_toast": false,
         "icon": {
