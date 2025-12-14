@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "wooden_trapdoor",
+  "ingredient": [
+    "minecraft:cherry_planks"
+  ],
+  "result": {
+    "id": "minecraft:cherry_trapdoor",
+    "count": 2
+  }
+}

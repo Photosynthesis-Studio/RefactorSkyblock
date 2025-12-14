@@ -1,0 +1,31 @@
+{
+    "parent": "refactorskyblock:battle/kill_skeleton",
+    "criteria": {
+        "kill_spider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:spider"
+                }
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "腿越多生物越邪恶"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "杀死一只蜘蛛证明你没有蜘蛛恐惧症"
+        },
+        "show_toast": true,
+        "icon": {
+            "id": "minecraft:spider_spawn_egg",
+            "count": 1
+        },
+        "hidden": false
+    }
+}

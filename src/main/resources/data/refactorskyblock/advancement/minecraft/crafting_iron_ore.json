@@ -1,0 +1,35 @@
+{
+    "parent": "refactorskyblock:minecraft/crafting_iron_nugget",
+    "criteria": {
+        "crafting_iron_ore": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/iron_ore"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "原铁矿"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "用4个铁粒合成铁矿石，挖掘后获得粗铁和圆石"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:iron_ore",
+            "count": 1
+        },
+
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "crafting_iron_ore"
+        ]
+    ]
+}

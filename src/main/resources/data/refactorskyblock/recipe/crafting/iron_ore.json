@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "iron_ore",
+  "show_notification": false,
+  "key": {
+    "#": "minecraft:iron_nugget"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "minecraft:iron_ore",
+    "count": 1
+  }
+}

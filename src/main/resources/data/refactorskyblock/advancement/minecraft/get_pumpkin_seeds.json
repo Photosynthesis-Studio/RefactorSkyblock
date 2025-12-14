@@ -1,0 +1,38 @@
+{
+    "parent": "refactorskyblock:minecraft/placed_wheat_seeds",
+    "criteria": {
+        "get_pumpkin_seeds": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:pumpkin_seeds"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "这是南瓜种子"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "获得南瓜种子\n所有种子可以通过打草掉落"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:pumpkin_seeds",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "get_pumpkin_seeds"
+        ]
+    ]
+}

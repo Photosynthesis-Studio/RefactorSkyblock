@@ -1,0 +1,34 @@
+{
+    "parent": "refactorskyblock:minecraft/kill_zombie",
+    "criteria": {
+        "crafting_leather": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/leather"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "腐肉烧皮革？并不是......"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "用4个腐肉合成皮革"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:leather",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "crafting_leather"
+        ]
+    ]
+}

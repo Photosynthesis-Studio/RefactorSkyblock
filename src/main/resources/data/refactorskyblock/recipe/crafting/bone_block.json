@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bone_block",
+  "show_notification": false,
+  "key": {
+    "#": "minecraft:bone_meal"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "minecraft:bone_block",
+    "count": 1
+  }
+}

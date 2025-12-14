@@ -1,0 +1,36 @@
+{
+    "parent": "refactorskyblock:technology/technology",
+    "criteria": {
+        "kill_zombie": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie"
+                }
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "暗面血肉"
+        },
+        "announce_to_chat": false,
+        "description": {
+            "translate": "aaa",
+            "fallback": "杀死一只僵尸并获得它的腐肉，使用黑夜血肉作为资源，使用1个木板和一个木棍来合成木剑"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:rotten_flesh",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "kill_zombie"
+        ]
+    ]
+}

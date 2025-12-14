@@ -1,0 +1,38 @@
+{
+    "parent": "refactorskyblock:minecraft/get_pumpkin_seeds",
+    "criteria": {
+        "get_melon_seeds": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:melon_seeds"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "这是水瓜种子"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "获得西瓜种子"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:melon_seeds",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "get_melon_seeds"
+        ]
+    ]
+}

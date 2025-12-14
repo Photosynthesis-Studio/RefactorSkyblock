@@ -1,4 +1,6 @@
 {
+  "advancements.refactorskyblock.is_diet.description": "Get dirt.",
+  "advancements.refactorskyblock.is_diet.title": "Dirt!",
   "generator.refactorskyblock.skyblock": "Refactor Skyblock",
   "item.refactorskyblock.acacia_bark": "Acacia Bark",
   "item.refactorskyblock.birch_bark": "Birch Bark",
@@ -23,5 +25,7 @@
   "refactorskyblock.configuration.initialFoodNumber.tooltip": "If a new player logs into the world, give him the amount of food.",
   "refactorskyblock.description": "这里写描述",
   "subtitles.item.bone_bowl.empty": "Bone Bowl empties",
-  "subtitles.item.bone_bowl.fill": "Bone Bowl fills"
+  "subtitles.item.bone_bowl.fill": "Bone Bowl fills",
+  "text.onPlayerLoggedIn.1": "Welcome to Refactor Skyblock v0.1.0",
+  "text.onPlayerLoggedIn.2": "Can Play Mode, just can play... remember open keepInventory!"
 }

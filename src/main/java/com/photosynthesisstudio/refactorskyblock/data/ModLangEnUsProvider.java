@@ -56,6 +56,11 @@ public class ModLangEnUsProvider extends LanguageProvider {
 
         addSound(ModSoundEvents.BONE_BOWL_EMPTY, "Bone Bowl empties");
         addSound(ModSoundEvents.BONE_BOWL_FILL, "Bone Bowl fills");
+
+        add("text.onPlayerLoggedIn.1", "Welcome to Refactor Skyblock v0.1.0");
+        add("text.onPlayerLoggedIn.2", "Can Play Mode, just can play... remember open keepInventory!");
+
+        addAdvancement("is_diet", "Dirt!", "Get dirt.");
     }
 
     public <R, T extends R> void addCreativeModeTab(DeferredHolder<R, T> itemGroup, String name) {

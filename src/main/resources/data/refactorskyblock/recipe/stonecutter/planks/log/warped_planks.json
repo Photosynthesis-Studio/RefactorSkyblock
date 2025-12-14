@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "bark",
+  "ingredient": [
+    "minecraft:warped_stem"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:warped_planks"
+  }
+}

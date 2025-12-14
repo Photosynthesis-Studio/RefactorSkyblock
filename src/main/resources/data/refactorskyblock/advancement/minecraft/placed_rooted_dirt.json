@@ -1,0 +1,39 @@
+{
+    "parent": "refactorskyblock:minecraft/crafting_rooted_dirt",
+    "criteria": {
+        "placed_dirt": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:block_state_property",
+                        "block": "minecraft:rooted_dirt"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "这就是光合作用"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "破坏缠根泥土以获得更多泥土"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:dirt",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "placed_dirt"
+        ]
+    ]
+}

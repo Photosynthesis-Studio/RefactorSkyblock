@@ -1,0 +1,34 @@
+{
+    "parent": "refactorskyblock:minecraft/crafting_cobblestone",
+    "criteria": {
+        "crafting_wooden_pickaxe": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/tools/stone/stone_pickaxe"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "a",
+            "fallback": "石器时代"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "a",
+            "fallback": "使用2个圆石和1个棍木来制作一把石镐"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:stone_pickaxe",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "crafting_wooden_pickaxe"
+        ]
+    ]
+}

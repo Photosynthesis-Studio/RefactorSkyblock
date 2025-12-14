@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "minecraft": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "background": "minecraft:block/oak_planks",
+        "frame": "task",
+        "title": {
+            "translate": "advancements.story.root.title"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "欢迎!\n奖励：面包*64 红色收纳袋*1\n望远镜*1"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:grass_block",
+            "count": 1
+        },
+        "hidden": false
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "parent": "refactorskyblock:minecraft/minecraft",
+    "criteria": {
+        "get_wooden_axe": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/tools/wood/wooden_axe"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "奇怪的配方"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "使用2个木棍和1个木板来合成木斧"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:wooden_axe",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "get_wooden_axe"
+        ]
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "parent": "refactorskyblock:technology/technology",
+    "criteria": {
+        "placed_wheat_seeds": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:block_state_property",
+                        "block": "minecraft:wheat"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "光合作用"
+        },
+        "announce_to_chat": false,
+        "description": {
+            "translate": "aaa",
+            "fallback": "种植小麦，开始科技的第一步，也就是 光 合 作 用~"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:wheat_seeds",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "placed_wheat_seeds"
+        ]
+    ]
+}

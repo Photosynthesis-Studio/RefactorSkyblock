@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "iron_nugget",
+  "show_notification": false,
+  "key": {
+    "#": "minecraft:leather",
+    "&": "minecraft:arrow"
+  },
+  "pattern": [
+    "#&"
+  ],
+  "result": {
+    "id": "minecraft:iron_nugget",
+    "count": 1
+  }
+}

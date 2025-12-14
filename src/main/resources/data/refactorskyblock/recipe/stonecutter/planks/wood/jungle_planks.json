@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "bark",
+  "ingredient": [
+    "minecraft:jungle_wood"
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:jungle_planks"
+  }
+}

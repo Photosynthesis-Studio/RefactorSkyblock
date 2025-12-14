@@ -1,4 +1,6 @@
 {
+  "advancements.refactorskyblock.is_diet.description": "获取泥土",
+  "advancements.refactorskyblock.is_diet.title": "土!",
   "generator.refactorskyblock.skyblock": "异构空岛",
   "item.refactorskyblock.acacia_bark": "金合欢树皮",
   "item.refactorskyblock.birch_bark": "白桦树皮",
@@ -23,5 +25,7 @@
   "refactorskyblock.configuration.initialFoodNumber.tooltip": "当有新玩家加入世界时, 给予他这个数量的食物.",
   "refactorskyblock.description": "这里写描述",
   "subtitles.item.bone_bowl.empty": "骨碗：倒空",
-  "subtitles.item.bone_bowl.fill": "骨碗：装满"
+  "subtitles.item.bone_bowl.fill": "骨碗：装满",
+  "text.onPlayerLoggedIn.1": "欢迎游玩 异构空岛 v0.1.0",
+  "text.onPlayerLoggedIn.2": "能玩模式 字面意思 记得死亡不掉落"
 }

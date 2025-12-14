@@ -2,15 +2,11 @@ package com.photosynthesisstudio.refactorskyblock.event;
 
 import com.mojang.serialization.Codec;
 import com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig;
-import com.photosynthesisstudio.refactorskyblock.data.ModAdvancementGenerator;
-import net.minecraft.advancements.Advancement;
-import net.minecraft.advancements.AdvancementHolder;
+import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
-import net.minecraft.server.PlayerAdvancements;
-import net.minecraft.server.ServerAdvancementManager;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -19,10 +15,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.StructureManager;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.storage.LevelData;
 import net.minecraft.world.level.storage.WritableLevelData;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -116,6 +110,7 @@ public class InitializeSkyblock {
     @SubscribeEvent
     public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
         Player player = event.getEntity();
+        CommandSourceStack sourceStack = player.createCommandSourceStackForNameResolution((ServerLevel) player.level());
 
         // 服务器端
         if (player.level().isClientSide()) {
@@ -130,10 +125,18 @@ public class InitializeSkyblock {
             attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).setBaseValue(2.5);
         }
 
+        sourceStack.sendSystemMessage(Component.translatable("text.onPlayerLoggedIn.1"));
+
         if (!player.getData(PLAYER_INITIALIZE)) {
             // 给物品
             player.addItem(new ItemStack(Items.BREAD, RefactorSkyblockConfig.INITIAL_FOOD_NUMBER.get()));
             player.addItem(new ItemStack(Items.RED_BUNDLE));
+
+            // 能玩模式
+            if (RefactorSkyblockConfig.CAN_PLAY_MODE.get()) {
+                player.addItem(new ItemStack(Items.OAK_PLANKS, 4));
+                sourceStack.sendSystemMessage(Component.translatable("text.onPlayerLoggedIn.2"));
+            }
 
             // 初始化
             player.setData(PLAYER_INITIALIZE, true);

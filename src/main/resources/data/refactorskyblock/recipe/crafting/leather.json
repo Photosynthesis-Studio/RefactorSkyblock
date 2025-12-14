@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "leather",
+  "show_notification": false,
+  "key": {
+    "#": "minecraft:rotten_flesh"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "id": "minecraft:leather",
+    "count": 1
+  }
+}

@@ -13,7 +13,7 @@ public class RefactorSkyblockConfig {
 
     public static final ModConfigSpec.BooleanValue CAN_PLAY_MODE = COMMON
             .translation(NAME_KEY.formatted("canPlayMode"))
-            .define("canPlayMode", false);
+            .define("canPlayMode", true);
 
     public static final ModConfigSpec.IntValue INITIAL_FOOD_NUMBER = COMMON
             .comment("If a new player logs into the world, give him the amount of food.")

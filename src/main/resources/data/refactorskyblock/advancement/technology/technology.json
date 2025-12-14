@@ -1,0 +1,34 @@
+{
+    "criteria": {
+        "get_wheat_seeds": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:block_state_property",
+                        "block": "minecraft:wheat"
+                    }
+                ]
+            }
+        }
+    },
+    "display": {
+        "background": "block/test_block_start",
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "科技"
+        },
+        "announce_to_chat": false,
+        "description": {
+            "translate": "aaa",
+            "fallback": "记录你的科技进度"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:waxed_oxidized_copper_bulb",
+            "count": 1
+        },
+        "hidden": false
+    }
+}

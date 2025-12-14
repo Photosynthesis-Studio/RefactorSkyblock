@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "bone_meal",
+  "ingredient": [
+    "minecraft:wheat_seeds"
+  ],
+  "result": {
+    "id": "minecraft:bone_meal",
+    "count": 2
+  }
+}

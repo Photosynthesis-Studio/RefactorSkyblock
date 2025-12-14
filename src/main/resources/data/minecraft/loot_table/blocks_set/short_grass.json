@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:shears"
+                  }
+                }
+              ],
+              "name": "minecraft:short_grass"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.05,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:wheat_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.05,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:pumpkin_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.05,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:melon_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.05,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "minecraft:beetroot_seeds"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/short_grass"
+}

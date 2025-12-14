@@ -56,6 +56,11 @@ public class ModLangZhCnProvider extends LanguageProvider {
 
         addSound(ModSoundEvents.BONE_BOWL_EMPTY, "骨碗：倒空");
         addSound(ModSoundEvents.BONE_BOWL_FILL, "骨碗：装满");
+
+        add("text.onPlayerLoggedIn.1", "欢迎游玩 异构空岛 v0.1.0");
+        add("text.onPlayerLoggedIn.2", "能玩模式 字面意思 记得死亡不掉落");
+
+        addAdvancement("is_diet", "土!", "获取泥土");
     }
 
     public <R, T extends R> void addCreativeModeTab(DeferredHolder<R, T> itemGroup, String name) {

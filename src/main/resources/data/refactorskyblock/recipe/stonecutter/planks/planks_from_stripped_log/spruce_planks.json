@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "planks",
+  "ingredient": [
+    "minecraft:stripped_spruce_log"
+  ],
+  "result": {
+    "id": "minecraft:spruce_planks",
+    "count": 4
+  }
+}

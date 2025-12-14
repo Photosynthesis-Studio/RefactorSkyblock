@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "max": 4,
+                                "min": 2
+                            }
+                        }
+                    ]
+                }
+           ] 
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 10,
+                "min": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:tag",
+                    "expand": true,
+                    "name": "minecraft:planks"
+                }
+            ],
+            "bonus_rolls": 0.0
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:tag",
+                    "expand": true,
+                    "name": "refactorskyblock:saplings"
+                }
+            ],
+            "bonus_rolls": 0.0
+        },
+        {
+            
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 10,
+                "min": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bread"
+                }
+            ],
+            "bonus_rolls": 0.0
+        },
+        {
+            
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 10,
+                "min": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bone_meal"
+                }
+            ],
+            "bonus_rolls": 0.0
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 10,
+                "min": 5
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:torch"
+                }
+            ],
+            "bonus_rolls": 0.0
+        }
+    ]    
+}

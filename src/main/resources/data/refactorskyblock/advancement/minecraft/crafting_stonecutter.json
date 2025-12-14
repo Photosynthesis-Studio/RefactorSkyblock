@@ -1,0 +1,34 @@
+{
+    "parent": "refactorskyblock:minecraft/crafting_wooden_pickaxe",
+    "criteria": {
+        "crafting_stonecutter": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/stonecutter"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "切木机还是切石机?"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "科技第二步，利用切石机增加产量，并制作更多物品，使用2个铁粒、一个石头、一个皮革来合成"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:stonecutter",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "crafting_stonecutter"
+        ]
+    ]
+}

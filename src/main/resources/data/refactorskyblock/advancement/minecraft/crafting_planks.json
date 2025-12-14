@@ -1,0 +1,111 @@
+{
+    "parent": "refactorskyblock:minecraft/crafting_wooden_axe",
+    "criteria": {
+        "acacia_planks": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/acacia_planks"
+            }
+        },
+        "bamboo_planks": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/bamboo_planks"
+            }
+        },
+        "birch_planks": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/birch_planks"
+            }
+        },
+        "cherry_planks": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/cherry_planks"
+            }
+        },
+        "crimson_planks": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/crimson_planks"
+            }
+        },
+        "dark_oak_planks": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/dark_oak_planks"
+            }
+        },
+        "jungle_planks": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/jungle_planks"
+            }
+        },
+        "mangrove_planks": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/mangrove_planks"
+            }
+        },
+        "oak_planks": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/oak_planks"
+            }
+        },
+        "pale_oak_planks": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/pale_oak_planks"
+            }
+        },
+        "spruce_planks": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/spruce_planks"
+            }
+        },
+        "warped_planks": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/warped_planks"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "a",
+            "fallback": "1:1合成?!"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "a",
+            "fallback": "拿着斧头对着原木右键即可获得去皮原木，再将去皮原木合成木板"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:stripped_oak_log",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "acacia_planks",
+            "bamboo_planks",
+            "birch_planks",
+            "cherry_planks",
+            "crimson_planks",
+            "dark_oak_planks",
+            "jungle_planks",
+            "mangrove_planks",
+            "oak_planks",
+            "pale_oak_planks",
+            "spruce_planks",
+            "warped_planks"
+        ]
+    ]
+}

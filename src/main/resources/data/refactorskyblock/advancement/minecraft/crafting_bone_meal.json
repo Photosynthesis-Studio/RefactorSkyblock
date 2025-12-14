@@ -1,0 +1,35 @@
+{
+    "parent": "refactorskyblock:minecraft/crafting_wooden_hoe",
+    "criteria": {
+        "crafting_bone_meal": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/bone_meal/wheat"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "金坷垃"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "用小麦合成骨粉，增加你的产量，种子也可以合成骨粉"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:bone_meal",
+            "count": 1
+        },
+
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "crafting_bone_meal"
+        ]
+    ]
+}

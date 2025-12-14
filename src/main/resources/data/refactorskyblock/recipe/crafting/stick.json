@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "stick",
+  "show_notification": false,
+  "key": {
+    "#": "#minecraft:planks"
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "id": "minecraft:stick",
+    "count": 8
+  }
+}

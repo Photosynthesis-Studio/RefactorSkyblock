@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "stonecutter",
+  "show_notification": false,
+  "key": {
+    "@": "minecraft:stone",
+    "&": "minecraft:leather",
+    "#": "minecraft:iron_nugget"
+  },
+  "pattern": [
+    "##",
+    "@&"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:stonecutter"
+  }
+}

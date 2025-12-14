@@ -1,0 +1,30 @@
+{
+    "parent": "refactorskyblock:battle/crafting_wooden_sword",
+    "criteria": {
+        "crafting_stone_sword": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/tools/stone/stone_sword"
+            }
+        }
+    },
+    "display": {
+        "background": "block/stone_bricks",
+        "frame": "task",
+        "title": {
+            "translate": "aaa",
+            "fallback": "战斗升级"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "aaa",
+            "fallback": "使用1个圆石和1个木棍来合成石剑，增强你的战斗能力"
+        },
+        "show_toast": true,
+        "icon": {
+            "id": "minecraft:stone_sword",
+            "count": 1
+        },
+        "hidden": false
+    }
+}
