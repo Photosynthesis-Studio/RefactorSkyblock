@@ -21,7 +21,7 @@ public class ModAdvancementGenerator implements AdvancementSubProvider {
         getItemAdvancement(dirt, "is_dirt", "story/root", Items.DIRT, saver);
     }
 
-    public Advancement.Builder dirt = Advancement.Builder.advancement();
+    private Advancement.Builder dirt = Advancement.Builder.advancement();
 
     private void getItemAdvancement(Advancement.Builder builder, String name,
                                     String parent, Item icon, Consumer<AdvancementHolder> saver) {

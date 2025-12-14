@@ -2,8 +2,15 @@ package com.photosynthesisstudio.refactorskyblock.event;
 
 import com.mojang.serialization.Codec;
 import com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig;
+import com.photosynthesisstudio.refactorskyblock.data.ModAdvancementGenerator;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.Identifier;
+import net.minecraft.server.PlayerAdvancements;
+import net.minecraft.server.ServerAdvancementManager;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -12,7 +19,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.StructureManager;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.storage.LevelData;
 import net.minecraft.world.level.storage.WritableLevelData;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -42,9 +52,55 @@ public class InitializeSkyblock {
 
         // 放方块
         level.setBlock(new BlockPos(0, 64, 0),
-                Blocks.CRYING_OBSIDIAN.defaultBlockState(), 3);
+                Blocks.CRYING_OBSIDIAN.defaultBlockState(), Block.UPDATE_ALL);
         level.setBlock(new BlockPos(0, 65, 0),
-                Blocks.TORCH.defaultBlockState(), 3);
+                Blocks.TORCH.defaultBlockState(), Block.UPDATE_ALL);
+
+        // 能玩模式
+        if (RefactorSkyblockConfig.CAN_PLAY_MODE.get()) {
+            level.setBlock(new BlockPos(1, 64, 1),
+                    Blocks.GRASS_BLOCK.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(0, 64, 1),
+                    Blocks.GRASS_BLOCK.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(-1, 64, 1),
+                    Blocks.GRASS_BLOCK.defaultBlockState(), Block.UPDATE_ALL);
+
+            level.setBlock(new BlockPos(1, 64, 0),
+                    Blocks.GRASS_BLOCK.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(-1, 64, 0),
+                    Blocks.GRASS_BLOCK.defaultBlockState(), Block.UPDATE_ALL);
+
+            level.setBlock(new BlockPos(1, 64, -1),
+                    Blocks.GRASS_BLOCK.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(0, 64, -1),
+                    Blocks.GRASS_BLOCK.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(-1, 64, -1),
+                    Blocks.GRASS_BLOCK.defaultBlockState(), Block.UPDATE_ALL);
+
+            level.setBlock(new BlockPos(1, 63, 1),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(0, 63, 1),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(-1, 63, 1),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+
+            level.setBlock(new BlockPos(1, 63, 0),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(0, 63, 0),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(-1, 63, 0),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+
+            level.setBlock(new BlockPos(1, 63, -1),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(0, 63, -1),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+            level.setBlock(new BlockPos(-1, 63, -1),
+                    Blocks.STONE.defaultBlockState(), Block.UPDATE_ALL);
+
+            level.setBlock(new BlockPos(0, 65, 1),
+                    Blocks.OAK_SAPLING.defaultBlockState(), Block.UPDATE_ALL);
+        }
 
         // 设出生点
         if (level.getLevelData() instanceof WritableLevelData levelData) {
@@ -67,10 +123,12 @@ public class InitializeSkyblock {
         }
 
         // 设置玩家属性
-        AttributeMap attributes = player.getAttributes();
+        if (player.gameMode() != GameType.CREATIVE) {
+            AttributeMap attributes = player.getAttributes();
 
-        attributes.getInstance(Attributes.BLOCK_INTERACTION_RANGE).setBaseValue(3.5);
-        attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).setBaseValue(2.5);
+            attributes.getInstance(Attributes.BLOCK_INTERACTION_RANGE).setBaseValue(3.5);
+            attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).setBaseValue(2.5);
+        }
 
         if (!player.getData(PLAYER_INITIALIZE)) {
             // 给物品

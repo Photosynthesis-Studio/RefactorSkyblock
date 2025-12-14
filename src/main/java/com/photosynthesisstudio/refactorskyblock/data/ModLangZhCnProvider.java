@@ -11,7 +11,10 @@ import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 
+import java.util.List;
+
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblock.MODID;
+import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig.CAN_PLAY_MODE;
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig.INITIAL_FOOD_NUMBER;
 import static com.photosynthesisstudio.refactorskyblock.init.ModItems.*;
 
@@ -27,6 +30,7 @@ public class ModLangZhCnProvider extends LanguageProvider {
         add("generator." + MODID + ".skyblock", "异构空岛");
 
         addConfiguration(INITIAL_FOOD_NUMBER, "初始化食物数", "当有新玩家加入世界时, 给予他这个数量的食物.");
+        addConfiguration(CAN_PLAY_MODE, "能玩模式", "...能玩就行");
 
         add(PLANT_FERTILIZER, "植物肥");
 
@@ -63,9 +67,14 @@ public class ModLangZhCnProvider extends LanguageProvider {
         add("advancements." + MODID + ".%s.description".formatted(name), description);
     }
 
-    private void addConfiguration(ModConfigSpec.IntValue configuration, String name, String tooltip) {
-        add(MODID + ".configuration.%s".formatted(configPath(String.valueOf(configuration.getPath()))), name);
-        add(MODID + ".configuration.%s.tooltip".formatted(configPath(String.valueOf(configuration.getPath()))), tooltip);
+    private <T> void addConfiguration(ModConfigSpec.ConfigValue<T> configValue, String name, String tooltip) {
+        List<String> pathParts = configValue.getPath();
+        String path = String.join(".", pathParts);
+
+        // 生成翻译键
+        String configKey = MODID + ".configuration." + configPath(path);
+        add(configKey, name);
+        add(configKey + ".tooltip", tooltip);
     }
 
     private void add(DeferredItem<Item> item, String name) {

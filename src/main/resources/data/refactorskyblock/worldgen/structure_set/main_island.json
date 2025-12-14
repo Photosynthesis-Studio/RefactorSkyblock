@@ -1,0 +1,16 @@
+{
+    "structures": [
+        {
+            "structure": "refactorskyblock:main_island",
+            "weight": 1
+        }
+    ],
+    "placement": {
+		"type": "concentric_rings",
+        "salt": 24578260,
+        "distance": 1023,
+        "count": 1,
+        "spread": 1,
+        "preferred_biomes": []
+    }
+}

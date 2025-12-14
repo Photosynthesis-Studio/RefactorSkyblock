@@ -17,6 +17,8 @@
   "item.refactorskyblock.stone_nugget": "Stone Nugget",
   "item.refactorskyblock.warped_bark": "Warped Bark",
   "itemGroup.refactorskyblock.items": "Refactor Skyblock | Items",
+  "refactorskyblock.configuration.canPlayMode": "Can Play Mode",
+  "refactorskyblock.configuration.canPlayMode.tooltip": "...just can play",
   "refactorskyblock.configuration.initialFoodNumber": "Initial Food Number",
   "refactorskyblock.configuration.initialFoodNumber.tooltip": "If a new player logs into the world, give him the amount of food.",
   "refactorskyblock.description": "这里写描述",

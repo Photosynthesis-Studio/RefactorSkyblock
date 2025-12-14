@@ -11,9 +11,9 @@ public class RefactorSkyblockConfig {
 
     private static final String NAME_KEY = MODID + ".configuration.%s";
 
-    public static final ModConfigSpec.IntValue TEST_NUMBER = CLIENT
-            .translation(NAME_KEY.formatted("testNumber"))
-            .defineInRange("testNumber", 33, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.BooleanValue CAN_PLAY_MODE = COMMON
+            .translation(NAME_KEY.formatted("canPlayMode"))
+            .define("canPlayMode", false);
 
     public static final ModConfigSpec.IntValue INITIAL_FOOD_NUMBER = COMMON
             .comment("If a new player logs into the world, give him the amount of food.")

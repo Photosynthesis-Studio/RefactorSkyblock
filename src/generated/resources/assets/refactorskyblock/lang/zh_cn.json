@@ -17,6 +17,8 @@
   "item.refactorskyblock.stone_nugget": "石粒",
   "item.refactorskyblock.warped_bark": "扭曲树皮",
   "itemGroup.refactorskyblock.items": "异构空岛 | 物品",
+  "refactorskyblock.configuration.canPlayMode": "能玩模式",
+  "refactorskyblock.configuration.canPlayMode.tooltip": "...能玩就行",
   "refactorskyblock.configuration.initialFoodNumber": "初始化食物数",
   "refactorskyblock.configuration.initialFoodNumber.tooltip": "当有新玩家加入世界时, 给予他这个数量的食物.",
   "refactorskyblock.description": "这里写描述",
