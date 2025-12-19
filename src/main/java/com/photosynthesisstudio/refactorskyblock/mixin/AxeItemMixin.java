@@ -19,14 +19,13 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import java.util.*;
 import java.util.function.Supplier;
 
 @Mixin(AxeItem.class)
 public class AxeItemMixin {
-    private static final Map<Block, Supplier<Item>> BLOCK_TO_BARK = Map.ofEntries(
+    private static final Map<Block, Supplier<Item>> LOG_TO_BARK = Map.ofEntries(
             Map.entry(Blocks.STRIPPED_ACACIA_LOG, ModItems.ACACIA_BARK),
             Map.entry(Blocks.STRIPPED_BIRCH_LOG, ModItems.BIRCH_BARK),
             Map.entry(Blocks.STRIPPED_CHERRY_LOG, ModItems.CHERRY_BARK),
@@ -39,32 +38,44 @@ public class AxeItemMixin {
             Map.entry(Blocks.STRIPPED_SPRUCE_LOG, ModItems.SPRUCE_BARK),
             Map.entry(Blocks.STRIPPED_WARPED_STEM, ModItems.WARPED_BARK));
 
+    private static final Map<Block, Supplier<Item>> WOOD_TO_BARK = Map.ofEntries(
+            Map.entry(Blocks.STRIPPED_ACACIA_WOOD, ModItems.ACACIA_BARK),
+            Map.entry(Blocks.STRIPPED_BIRCH_WOOD, ModItems.BIRCH_BARK),
+            Map.entry(Blocks.STRIPPED_CHERRY_WOOD, ModItems.CHERRY_BARK),
+            Map.entry(Blocks.STRIPPED_CRIMSON_HYPHAE, ModItems.CRIMSON_BARK),
+            Map.entry(Blocks.STRIPPED_DARK_OAK_WOOD, ModItems.DARK_OAK_BARK),
+            Map.entry(Blocks.STRIPPED_JUNGLE_WOOD, ModItems.JUNGLE_BARK),
+            Map.entry(Blocks.STRIPPED_MANGROVE_WOOD, ModItems.MANGROVE_BARK),
+            Map.entry(Blocks.STRIPPED_OAK_WOOD, ModItems.OAK_BARK),
+            Map.entry(Blocks.STRIPPED_PALE_OAK_WOOD, ModItems.PALE_OAK_BARK),
+            Map.entry(Blocks.STRIPPED_SPRUCE_WOOD, ModItems.SPRUCE_BARK),
+            Map.entry(Blocks.STRIPPED_WARPED_HYPHAE, ModItems.WARPED_BARK));
+
     // 根据方块获取对应的掉落物
     @Unique
-    private static Optional<ItemStack> getBarkDrop(Block logBlock, Level level, boolean hasSilkTouch) {
-        Supplier<Item> barkSupplier = BLOCK_TO_BARK.get(logBlock);
-        if (barkSupplier != null) {
+    private static Optional<ItemStack> refactorSkyblock_NeoForge_1_21_11$getBarkDrop(Block logBlock, Level level, boolean hasSilkTouch) {
+        Supplier<Item> logBarkSupplier = LOG_TO_BARK.get(logBlock);
+        Supplier<Item> woodBarkSupplier = WOOD_TO_BARK.get(logBlock);
+
+        if (logBarkSupplier != null) {
             int count = 4;
             // 随机1-4个
             if (!hasSilkTouch) {
                 count = level.random.nextInt(4) + 1;
             }
-            return Optional.of(new ItemStack(barkSupplier.get(), count));
+            return Optional.of(new ItemStack(logBarkSupplier.get(), count));
+        }
+
+        if (woodBarkSupplier != null) {
+            int count = 4;
+            // 随机1-4个
+            if (!hasSilkTouch) {
+                count = level.random.nextInt(4) + 1;
+            }
+            return Optional.of(new ItemStack(woodBarkSupplier.get(), count));
         }
 
         return Optional.empty();
-    }
-
-    // 查询这个方块在不在 Map 里
-    @Unique
-    private static boolean isStrippedLog(Block block) {
-        return BLOCK_TO_BARK.containsKey(block);
-    }
-
-    // 获取所有已注册的方块
-    @Unique
-    private static Set<Block> getRegisteredLogs() {
-        return Collections.unmodifiableSet(BLOCK_TO_BARK.keySet());
     }
 
     @Inject(
@@ -73,19 +84,21 @@ public class AxeItemMixin {
                     value = "INVOKE",
                     target = "Lnet/minecraft/world/level/Level;setBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z",
                     shift = At.Shift.AFTER
-            ),
-            locals = LocalCapture.CAPTURE_FAILHARD
+            )
     )
     private void useOn(UseOnContext context, CallbackInfoReturnable<InteractionResult> cir) {
         Level mlevel = context.getLevel();
         BlockPos mblockPos = context.getClickedPos();
         Player mplayer = context.getPlayer();
 
-        boolean hasSilkTouch = EnchantmentHelper.getTagEnchantmentLevel(
-                mlevel.registryAccess().getOrThrow(Enchantments.SILK_TOUCH),
-                mplayer.getMainHandItem()) != 0;
+        boolean hasSilkTouch = false;
+        if (mplayer != null) {
+            hasSilkTouch = EnchantmentHelper.getTagEnchantmentLevel(
+                    mlevel.registryAccess().getOrThrow(Enchantments.SILK_TOUCH),
+                    mplayer.getMainHandItem()) != 0;
+        }
 
-        Optional<ItemStack> barkDrop = getBarkDrop(mlevel.getBlockState(mblockPos).getBlock(), mlevel, hasSilkTouch);
+        Optional<ItemStack> barkDrop = refactorSkyblock_NeoForge_1_21_11$getBarkDrop(mlevel.getBlockState(mblockPos).getBlock(), mlevel, hasSilkTouch);
 
 
         if (barkDrop.isPresent()) {
