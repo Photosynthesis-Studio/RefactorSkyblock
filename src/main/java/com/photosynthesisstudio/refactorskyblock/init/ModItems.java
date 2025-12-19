@@ -3,8 +3,8 @@ package com.photosynthesisstudio.refactorskyblock.init;
 import com.photosynthesisstudio.refactorskyblock.RefactorSkyblock;
 import com.photosynthesisstudio.refactorskyblock.item.BarkItem;
 import com.photosynthesisstudio.refactorskyblock.item.BoneBowlItem;
-import com.photosynthesisstudio.refactorskyblock.item.PlantFertilizerItem;
 import com.photosynthesisstudio.refactorskyblock.item.BoneBowlWaterItem;
+import net.minecraft.world.item.BoneMealItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -14,7 +14,7 @@ import java.util.function.Function;
 public class ModItems {
     public static final DeferredRegister.Items ITEM_REG = DeferredRegister.createItems(RefactorSkyblock.MODID);
 
-    public static final DeferredItem<Item> PLANT_FERTILIZER = registerItem("plant_fertilizer", PlantFertilizerItem::new);
+    public static final DeferredItem<Item> PLANT_FERTILIZER = registerItem("plant_fertilizer", BoneMealItem::new);
 
     public static final DeferredItem<Item> BONE_BOWL = registerItem("bone_bowl", BoneBowlItem::new);
     public static final DeferredItem<Item> BONE_BOWL_WATER = registerItem("bone_bowl_water", BoneBowlWaterItem::new);
