@@ -1,6 +1,5 @@
 package com.photosynthesisstudio.refactorskyblock;
 
-import com.mojang.serialization.Codec;
 import com.photosynthesisstudio.refactorskyblock.event.InitializeSkyblock;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.DeferredRegister;
