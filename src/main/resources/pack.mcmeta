@@ -14,10 +14,6 @@
       },
       {
         "namespace": "minecraft",
-        "path": "loot_table/.*"
-      },
-      {
-        "namespace": "minecraft",
         "path": "recipe/.*"
       }
     ]
