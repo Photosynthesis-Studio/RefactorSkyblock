@@ -154,7 +154,7 @@ public class InitializeSkyblock {
         AttributeMap attributes = player.getAttributes();
         GameType newGameMode = event.getNewGameMode();
 
-        Identifier id = Identifier.fromNamespaceAndPath(MODID, "creative_plus");
+        Identifier id = Identifier.fromNamespaceAndPath(MODID, "creative_modifier");
         AttributeModifier modifier = new AttributeModifier(id, 10, AttributeModifier.Operation.ADD_VALUE);
 
         if (newGameMode == GameType.CREATIVE) {
