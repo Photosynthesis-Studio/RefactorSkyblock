@@ -4,7 +4,7 @@
   "group": "stick",
   "show_notification": false,
   "key": {
-    "#": "#minecraft:planks"
+    "#": "#refactorskyblock:barks"
   },
   "pattern": [
     "#",
@@ -12,6 +12,6 @@
   ],
   "result": {
     "id": "minecraft:stick",
-    "count": 8
+    "count": 2
   }
 }

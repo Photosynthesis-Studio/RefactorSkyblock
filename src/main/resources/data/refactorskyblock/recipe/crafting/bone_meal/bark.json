@@ -2,9 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "group": "bone_meal",
-  "show_notification": false,
   "key": {
-    "#": "minecraft:bone"
+    "#": "#refactorskyblock:barks"
   },
   "pattern": [
     "#"

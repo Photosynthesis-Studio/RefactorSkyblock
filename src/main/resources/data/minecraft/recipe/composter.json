@@ -1,8 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "composter",
-  "show_notification": false,
   "key": {
     "#": "#minecraft:slabs"
   },

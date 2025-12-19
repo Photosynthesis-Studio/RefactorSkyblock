@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "bark",
+  "group": "stripped_wood",
   "key": {
     "#": "minecraft:stripped_spruce_log"
   },
