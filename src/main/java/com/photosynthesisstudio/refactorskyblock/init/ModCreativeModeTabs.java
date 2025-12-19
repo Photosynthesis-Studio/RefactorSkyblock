@@ -40,6 +40,11 @@ public class ModCreativeModeTabs {
 
                         output.accept(STONE_ARROW);
                         output.accept(STONE_NUGGET);
+
+                        output.accept(SIMPLE_SHOVEL);
+                        output.accept(SIMPLE_PICKAXE);
+                        output.accept(SIMPLE_AXE);
+                        output.accept(SIMPLE_HOE);
                         }, () -> PLANT_FERTILIZER.get().getDefaultInstance()
             ));
 

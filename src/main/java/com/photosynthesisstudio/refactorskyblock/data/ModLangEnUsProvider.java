@@ -52,6 +52,11 @@ public class ModLangEnUsProvider extends LanguageProvider {
         add(SPRUCE_BARK, "Spruce Bark");
         add(WARPED_BARK, "Warped Bark");
 
+        add(SIMPLE_AXE, "Simple Axe");
+        add(SIMPLE_HOE, "Simple Hoe");
+        add(SIMPLE_PICKAXE, "Simple Pickaxe");
+        add(SIMPLE_SHOVEL, "Simple Shovel");
+
         addCreativeModeTab(ModCreativeModeTabs.ITEMS_TAB, "Refactor Skyblock | Items");
 
         addSound(ModSoundEvents.BONE_BOWL_EMPTY, "Bone Bowl empties");

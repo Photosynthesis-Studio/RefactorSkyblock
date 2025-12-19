@@ -52,6 +52,11 @@ public class ModLangZhCnProvider extends LanguageProvider {
         add(SPRUCE_BARK, "云杉树皮");
         add(WARPED_BARK, "扭曲树皮");
 
+        add(SIMPLE_AXE, "简易斧");
+        add(SIMPLE_HOE, "简易锄");
+        add(SIMPLE_PICKAXE, "简易镐");
+        add(SIMPLE_SHOVEL, "简易锹");
+
         addCreativeModeTab(ModCreativeModeTabs.ITEMS_TAB, "异构空岛 | 物品");
 
         addSound(ModSoundEvents.BONE_BOWL_EMPTY, "骨碗：倒空");
