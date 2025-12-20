@@ -1,0 +1,28 @@
+{
+    "parent": "refactorskyblock:minecraft/get_wood",
+    "criteria": {
+        "get_logs": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:planks"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "advancement.refactorskyblock.minecraft.get_planks.title"
+        },
+        "description": {
+            "translate": "advancement.refactorskyblock.minecraft.get_planks.description"
+        },
+        "icon": {
+            "id": "minecraft:stripped_oak_log",
+            "count": 1
+        }
+    }
+}

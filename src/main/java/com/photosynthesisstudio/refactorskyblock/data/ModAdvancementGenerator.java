@@ -2,8 +2,7 @@ package com.photosynthesisstudio.refactorskyblock.data;
 
 import com.photosynthesisstudio.refactorskyblock.init.ModItems;
 import net.minecraft.advancements.*;
-import net.minecraft.advancements.criterion.InventoryChangeTrigger;
-import net.minecraft.advancements.criterion.RecipeCraftedTrigger;
+import net.minecraft.advancements.criterion.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.advancements.AdvancementSubProvider;
@@ -13,6 +12,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -21,7 +21,7 @@ import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblock.MODID;
 
 public class ModAdvancementGenerator implements AdvancementSubProvider {
     @Override
-    public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> saver) {
+    public void generate(HolderLookup.@NotNull Provider registries, @NotNull Consumer<AdvancementHolder> saver) {
         inventoryChangedAdvancement(Items.BONE_BLOCK,
                 "minecraft",
                 "get_bone_meal",
@@ -157,6 +157,21 @@ public class ModAdvancementGenerator implements AdvancementSubProvider {
                         ResourceKey.create(Registries.RECIPE, identifier(MODID, recipeId))),
                 exp, saver);
     }
+//
+//    private void playerKilledEntity(Item icon, String category, String parent,
+//                                    String name, AdvancementType advancementType,
+//                                    boolean showToast, boolean announceToChat, boolean hidden,
+//                                    Entity entity, int exp,
+//                                    Consumer<AdvancementHolder> saver) {
+//        EntityPredicate entityPredicate = EntityPredicate.Builder.entity().build();
+//        KilledTrigger.TriggerInstance trigger = KilledTrigger.TriggerInstance.playerKilledEntity(eneityPredicate);
+//
+//        advancement(icon, category, parent, name, advancementType, showToast,
+//                announceToChat, hidden, "crafting_",
+//                KilledTrigger.TriggerInstance.playerKilledEntity(
+//                        new EntityPredicate.Builder().of(EntityType.DROWNED)),
+//                exp, saver);
+//    }
 
     private void advancement(Item icon, String category, String parent,
                              String name, AdvancementType advancementType,

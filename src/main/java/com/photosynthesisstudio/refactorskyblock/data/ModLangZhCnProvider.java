@@ -71,14 +71,11 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("battle", "kill_skeleton", "你真是坏到骨子里了", "杀死1只骷髅证明你不是软骨头");
         addAdvancement("battle", "kill_spider", "腿越多生物越邪恶", "杀死1只蜘蛛证明你没有蜘蛛恐惧症");
         addAdvancement("battle", "kill_zombie", "杀死姜丝", "杀死1只僵尸证明你的石粒");
-
-
         addAdvancement("minecraft", "minecraft", "Minecraft", "欢迎!");
         addAdvancement("minecraft", "get_wood", "我木头呢?", "空手挖掘木头有概率掉落去皮原木和树皮, 用去皮原木才能合成木板");
         addAdvancement("minecraft", "get_planks", "1:1合成?!", "黑心商人这一块");
         addAdvancement("minecraft", "get_bone_block", "头盖骨建材", "用4个骨粉合成骨块，用于各种建筑");
         addAdvancement("minecraft", "eat_bark", "不是你真吃啊?", "孩子牙口挺好, 但是嘴有点馋");
-
         addAdvancement("minecraft", "get_bone_bowl", "头盖骨饭碗", "用2个骨头来合成骨碗");
         addAdvancement("minecraft", "get_bone_meal", "金坷垃", "用树皮合成骨粉，增加你的产量，种子也可以合成骨粉");
         addAdvancement("minecraft", "get_simple_axe", "这真的能用吗?", "合成一把简易斧");
@@ -86,8 +83,6 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("minecraft", "get_simple_pickaxe", "……这玩意有用吗", "制作简易镐");
         addAdvancement("minecraft", "get_simple_shovel", "小心点挖!", "制作简易锹");
         addAdvancement("minecraft", "get_seeds", "光合作用", "种植作物, 开始科技的第一步, 也就是 光 合 作 用~");
-        addAdvancement("minecraft", "get_copper_nugget", "Mojang最爱——恋铜癖", "将僵尸泡水里一段时间将其传化成溺尸，杀死它并获得铜粒");
-
         addAdvancement("minecraft", "get_beetroot", "天才!", "我是农民，这就是甜菜!");
         addAdvancement("minecraft", "get_melon_slice", "窝头咩乐", "吃瓜ing~");
         addAdvancement("minecraft", "get_pumpkin", "呱瓜", "瓜瓜瓜");
@@ -95,7 +90,7 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("technology", "technology", "科技", "记录你的科技进度");
     }
 
-    public <R, T extends R> void addCreativeModeTab(DeferredHolder<R, T> itemGroup, String name) {
+    public <R, T extends R> void addCreativeModeTab(DeferredHolder<R, @org.jetbrains.annotations.NotNull T> itemGroup, String name) {
         add("itemGroup." + itemGroup.getId().toString().replace(":", "."), name);
     }
 
@@ -114,7 +109,7 @@ public class ModLangZhCnProvider extends LanguageProvider {
         add(configKey + ".tooltip", tooltip);
     }
 
-    private void add(DeferredItem<Item> item, String name) {
+    private void add(DeferredItem<@org.jetbrains.annotations.NotNull Item> item, String name) {
         this.add(item.get(), name);
     }
 

@@ -1,126 +1,27 @@
 {
-    "parent": "refactorskyblock:minecraft/crafting_planks",
-    "criteria": 
-    {
-        "eat_acacia_bark": {
+    "parent": "refactorskyblock:minecraft/get_wood",
+    "criteria": {
+        "eat_barks": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
-                    "items": "refactorskyblock:acacia_bark"
-                }
-            }
-        },
-        "eat_birch_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:birch_bark"
-                }
-            }
-        },
-        "eat_cherry_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:cherry_bark"
-                }
-            }
-        },
-        "eat_crimson_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:crimson_bark"
-                }
-            }
-        },
-        "eat_dark_oak_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:dark_oak_bark"
-                }
-            }
-        },
-        "eat_jungle_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:jungle_bark"
-                }
-            }
-        },
-        "eat_mangrove_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:mangrove_bark"
-                }
-            }
-        },
-        "eat_oak_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:oak_bark"
-                }
-            }
-        },
-        "eat_pale_oak_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:pale_oak_bark"
-                }
-            }
-        },
-        "eat_spruce_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:spruce_bark"
-                }
-            }
-        },
-        "eat_warped_bark": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "refactorskyblock:warped_bark"
+                    "items": "#refactorskyblock:barks"
                 }
             }
         }
-        
     },
     "display": {
-        "frame": "task",
+        "frame": "goal",
         "title": {
             "translate": "advancement.refactorskyblock.minecraft.eat_bark.title"
         },
-        "announce_to_chat": true,
         "description": {
             "translate": "advancement.refactorskyblock.minecraft.eat_bark.description"
         },
-        "show_toast": false,
         "icon": {
             "id": "refactorskyblock:oak_bark",
             "count": 1
         },
-        "hidden": false
-    },
-    "requirements": [
-        [
-            "eat_acacia_bark",
-            "eat_birch_bark",
-            "eat_cherry_bark",
-            "eat_crimson_bark",
-            "eat_dark_oak_bark",
-            "eat_jungle_bark",
-            "eat_mangrove_bark",
-            "eat_oak_bark",
-            "eat_pale_oak_bark",
-            "eat_spruce_bark",
-            "eat_warped_bark"
-        ]
-    ]
+        "hidden": true
+    }
 }
