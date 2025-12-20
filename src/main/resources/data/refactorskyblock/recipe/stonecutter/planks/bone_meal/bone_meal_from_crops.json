@@ -1,11 +1,11 @@
 {
   "type": "minecraft:stonecutting",
-  "group": "planks",
+  "group": "bone_meal",
   "ingredient": [
-    "minecraft:stripped_warped_stem"
+    "#c:crops"
   ],
   "result": {
-    "id": "minecraft:warped_planks",
+    "id": "minecraft:bone_meal",
     "count": 4
   }
 }

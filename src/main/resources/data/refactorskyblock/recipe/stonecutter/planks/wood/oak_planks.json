@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "group": "bark",
   "ingredient": [
-    "minecraft:oak_wood"
+    "#minecraft:oak_logs"
   ],
   "result": {
     "count": 4,

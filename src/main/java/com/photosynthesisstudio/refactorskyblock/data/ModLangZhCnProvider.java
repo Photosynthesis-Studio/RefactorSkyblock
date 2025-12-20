@@ -72,32 +72,27 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("battle", "kill_spider", "腿越多生物越邪恶", "杀死1只蜘蛛证明你没有蜘蛛恐惧症");
         addAdvancement("battle", "kill_zombie", "杀死姜丝", "杀死1只僵尸证明你的石粒");
 
-        addAdvancement("minecraft", "crafting_bone_block", "头盖骨建材", "用4个骨粉合成骨块，用于各种建筑");
-        addAdvancement("minecraft", "crafting_bone_bowl", "头盖骨饭碗", "用2个骨头来合成骨碗");
-        addAdvancement("minecraft", "crafting_bone_meal", "金坷垃", "用小麦合成骨粉，增加你的产量，种子也可以合成骨粉");
-        addAdvancement("minecraft", "crafting_cobblestone", "石材切制", "将石头切制成圆石，我们MC也有自己的圆石");
-        addAdvancement("minecraft", "crafting_dirt", "这就是光合作用!", "使用1个小麦、1个甜菜、1个西瓜片、1个南瓜来合成泥土，甜菜根最有用的1集!");
-        addAdvancement("minecraft", "crafting_iron_ore", "原铁矿", "用4个铁粒合成铁矿石，挖掘后获得粗铁和圆石");
-        addAdvancement("minecraft", "crafting_leather", "腐肉烧皮革?并不是......", "用4个腐肉来合成皮革");
-        addAdvancement("minecraft", "crafting_planks", "1:1合成?!", "拿着斧头对着原木右键即可获得去皮原木，再将去皮原木合成木板");
-        addAdvancement("minecraft", "crafting_stone_nugget", "石粒!", "这么强?");
-        addAdvancement("minecraft", "crafting_stone_pickaxe", "石器时代", "使用2个圆石和1个棍木来制作1把石镐");
-        addAdvancement("minecraft", "crafting_stonecutter", "切木机还是切石机?", "科技第二步，利用切石机增加产量，并制作更多物品，使用2个铁粒、1个石头、1个皮革来合成");
-        addAdvancement("minecraft", "crafting_wooden_axe", "奇怪的配方", "使用2个木棍和1个木板来合成木斧");
-        addAdvancement("minecraft", "crafting_wooden_hoe", "开垦荒岛", "用3个木棍来合成1把木锄");
-        addAdvancement("minecraft", "crafting_wooden_pickaxe", "采石时间到", "使用2个木板和1个棍木来制作1把木镐。赶快用你的新镐去挖石头吧");
-        addAdvancement("minecraft", "eat_bark", "牙口好", "牙口虽好，但是胃不好");
-        addAdvancement("minecraft", "get_beetroot_seeds", "这是天才种子", "获得甜菜种子\n我是农民，这就是甜菜!");
+
+        addAdvancement("minecraft", "minecraft", "Minecraft", "欢迎!");
+        addAdvancement("minecraft", "get_wood", "我木头呢?", "空手挖掘木头有概率掉落去皮原木和树皮, 用去皮原木才能合成木板");
+        addAdvancement("minecraft", "get_planks", "1:1合成?!", "黑心商人这一块");
+        addAdvancement("minecraft", "get_bone_block", "头盖骨建材", "用4个骨粉合成骨块，用于各种建筑");
+        addAdvancement("minecraft", "eat_bark", "不是你真吃啊?", "孩子牙口挺好, 但是嘴有点馋");
+
+        addAdvancement("minecraft", "get_bone_bowl", "头盖骨饭碗", "用2个骨头来合成骨碗");
+        addAdvancement("minecraft", "get_bone_meal", "金坷垃", "用树皮合成骨粉，增加你的产量，种子也可以合成骨粉");
+        addAdvancement("minecraft", "get_simple_axe", "这真的能用吗?", "合成一把简易斧");
+        addAdvancement("minecraft", "get_simple_hoe", "开垦荒岛", "制作简易锄");
+        addAdvancement("minecraft", "get_simple_pickaxe", "……这玩意有用吗", "制作简易镐");
+        addAdvancement("minecraft", "get_simple_shovel", "小心点挖!", "制作简易锹");
+        addAdvancement("minecraft", "get_seeds", "光合作用", "种植作物, 开始科技的第一步, 也就是 光 合 作 用~");
         addAdvancement("minecraft", "get_copper_nugget", "Mojang最爱——恋铜癖", "将僵尸泡水里一段时间将其传化成溺尸，杀死它并获得铜粒");
-        addAdvancement("minecraft", "get_melon_seeds", "这是水瓜种子", "获得西瓜种子");
-        addAdvancement("minecraft", "get_pumpkin_seeds", "这是南瓜种子", "获得南瓜种子\n所有种子可以通过打草掉落");
-        addAdvancement("minecraft", "get_stone_nugget", "打磨", "使用1张皮革和1支石箭打磨出石粒，杀死骷髅会掉落石箭");
-        addAdvancement("minecraft", "kill_zombie", "暗面血肉", "杀死一只僵尸并获得它的腐肉，使用怪物的血肉作为资源。使用1个木板和一个木棍来合成木剑");
-        addAdvancement("minecraft", "minecraft", "Minecraft", "欢迎!\n奖励：面包*n 红色收纳袋\n望远镜*1");
-        addAdvancement("minecraft", "placed_wheat_seeds", "光合作用", "种植小麦，开始科技的第一步，也就是 光 合 作 用~");
+
+        addAdvancement("minecraft", "get_beetroot", "天才!", "我是农民，这就是甜菜!");
+        addAdvancement("minecraft", "get_melon_slice", "窝头咩乐", "吃瓜ing~");
+        addAdvancement("minecraft", "get_pumpkin", "呱瓜", "瓜瓜瓜");
+
         addAdvancement("technology", "technology", "科技", "记录你的科技进度");
-
-
     }
 
     public <R, T extends R> void addCreativeModeTab(DeferredHolder<R, T> itemGroup, String name) {

@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "group": "bark",
   "ingredient": [
-    "minecraft:crimson_hyphae"
+    "#minecraft:crimson_stems"
   ],
   "result": {
     "count": 4,

@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "group": "bone_meal",
   "ingredient": [
-    "minecraft:wheat_seeds"
+    "#c:seeds"
   ],
   "result": {
     "id": "minecraft:bone_meal",

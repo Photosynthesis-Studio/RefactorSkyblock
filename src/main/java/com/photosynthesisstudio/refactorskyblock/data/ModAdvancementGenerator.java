@@ -22,76 +22,53 @@ import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblock.MODID;
 public class ModAdvancementGenerator implements AdvancementSubProvider {
     @Override
     public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> saver) {
-        recipeCraftedAdvancement(Items.STONE_SWORD,
-                "battle",
-                "crafting_wooden_sword",
-                "crafting/tools/stone/stone_sword",
+        inventoryChangedAdvancement(Items.BONE_BLOCK,
+                "minecraft",
+                "get_bone_meal",
                 saver);
-
-        recipeCraftedAdvancement(Items.BONE_BLOCK,
+        inventoryChangedAdvancement(Items.BONE_MEAL,
                 "minecraft",
-                "crafting_bone_meal",
-                "crafting/bone_block",
-                saver);
-        recipeCraftedAdvancement(Items.BONE_MEAL,
-                "minecraft",
-                "placed_wheat_seeds",
-                "crafting/bone_meal/wheat",
-                saver);
-        recipeCraftedAdvancement(Items.LEATHER,
-                "minecraft",
-                "kill_zombie",
-                "crafting/leather",
-                saver);
-        recipeCraftedAdvancement(ModItems.STONE_NUGGET.get(),
-                "minecraft",
-                "crafting_wooden_pickaxe",
-                "crafting/stone_nugget",
-                saver);
-        recipeCraftedAdvancement(Items.STONE_PICKAXE,
-                "minecraft",
-                "crafting_stone_nugget",
-                "crafting/tools/stone/stone_pickaxe",
-                saver);
-        recipeCraftedAdvancement(Items.WOODEN_AXE,
-                "minecraft",
-                "minecraft",
-                "crafting/tools/tools/wood/wooden_axe",
-                saver);
-        recipeCraftedAdvancement(Items.WOODEN_HOE,
-                "minecraft",
-                "placed_wheat_seeds",
-                "crafting/tools/tools/wood/wooden_hoe",
-                saver);
-        recipeCraftedAdvancement(Items.WOODEN_PICKAXE,
-                "minecraft",
-                "crafting_wooden_hoe",
-                "crafting/tools/tools/wood/wooden_pickaxe",
-                saver);
-        inventoryChangedAdvancement(Items.BEETROOT_SEEDS,
-                "minecraft",
-                "get_melon_seeds",
+                "get_wood",
                 saver);
         inventoryChangedAdvancement(Items.COPPER_NUGGET,
                 "minecraft",
                 "crafting_leather",
                 saver);
-        inventoryChangedAdvancement(Items.MELON_SEEDS,
-                "minecraft",
-                "get_pumpkin_seeds",
-                saver);
-        inventoryChangedAdvancement(Items.PUMPKIN_SEEDS,
-                "minecraft",
-                "placed_wheat_seeds",
-                saver);
         inventoryChangedAdvancement(ModItems.STONE_NUGGET.get(),
                 "minecraft",
                 "crafting_leather",
                 saver);
-        inventoryChangedAdvancement(Items.WHEAT_SEEDS,
+        inventoryChangedAdvancement(ModItems.BONE_BOWL.get(),
                 "minecraft",
-                "crafting_planks",
-                Items.WHEAT,
+                "get_bone_meal",
+                saver);
+        inventoryChangedAdvancement(ModItems.SIMPLE_HOE.get(),
+                "minecraft",
+                "get_planks",
+                saver);
+        inventoryChangedAdvancement(ModItems.SIMPLE_AXE.get(),
+                "minecraft",
+                "get_plank",
+                saver);
+        inventoryChangedAdvancement(ModItems.SIMPLE_PICKAXE.get(),
+                "minecraft",
+                "get_plank",
+                saver);
+        inventoryChangedAdvancement(ModItems.SIMPLE_SHOVEL.get(),
+                "minecraft",
+                "get_plank",
+                saver);
+        inventoryChangedAdvancement(Items.MELON_SLICE,
+                "minecraft",
+                "get_seeds",
+                saver);
+        inventoryChangedAdvancement(Items.PUMPKIN,
+                "minecraft",
+                "get_seeds",
+                saver);
+        inventoryChangedAdvancement(Items.BEETROOT,
+                "minecraft",
+                "get_seeds",
                 saver);
     }
 

@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "group": "bark",
   "ingredient": [
-    "minecraft:mangrove_wood"
+    "#minecraft:mangrove_logs"
   ],
   "result": {
     "count": 4,
