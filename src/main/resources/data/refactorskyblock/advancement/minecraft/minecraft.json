@@ -12,7 +12,7 @@
         },
         "announce_to_chat": true,
         "description": {
-            "translate": "advancement.refactorskyblock.minecraft.placed_wheat_seeds.description"
+            "translate": "advancement.refactorskyblock.minecraft.minecraft.description"
         },
         "show_toast": false,
         "icon": {
