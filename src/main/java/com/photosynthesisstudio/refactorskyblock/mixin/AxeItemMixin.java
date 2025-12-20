@@ -91,25 +91,24 @@ public class AxeItemMixin {
         Level mlevel = context.getLevel();
         BlockPos mblockPos = context.getClickedPos();
         Player mplayer = context.getPlayer();
+        boolean hasSilkTouch;
 
-        boolean hasSilkTouch = false;
         if (mplayer != null) {
             hasSilkTouch = EnchantmentHelper.getTagEnchantmentLevel(
                     mlevel.registryAccess().getOrThrow(Enchantments.SILK_TOUCH),
                     mplayer.getMainHandItem()) != 0;
-        }
 
-        Optional<ItemStack> barkDrop = refactorSkyblock_NeoForge_1_21_11$getBarkDrop(mlevel.getBlockState(mblockPos).getBlock(), mlevel, hasSilkTouch);
+            Optional<ItemStack> barkDrop = refactorSkyblock_NeoForge_1_21_11$getBarkDrop(mlevel.getBlockState(mblockPos).getBlock(), mlevel, hasSilkTouch);
 
-
-        if (barkDrop.isPresent()) {
-            mlevel.addFreshEntity(new ItemEntity(
-                    mlevel,
-                    mblockPos.getX() + 0.5,
-                    mblockPos.getY() + 0.5,
-                    mblockPos.getZ() + 0.5,
-                    barkDrop.get()
-            ));
+            if (barkDrop.isPresent()) {
+                mlevel.addFreshEntity(new ItemEntity(
+                        mlevel,
+                        mblockPos.getX() + 0.5,
+                        mblockPos.getY() + 0.5,
+                        mblockPos.getZ() + 0.5,
+                        barkDrop.get()
+                ));
+            }
         }
     }
 }
