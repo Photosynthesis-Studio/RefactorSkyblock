@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:dark_oak_log",
+              "weight": 7
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": {
+                "pools": [
+                  {
+                    "rolls": 1,
+                    "entries": [
+                      {
+                        "type": "minecraft:item",
+                        "name": "refactorskyblock:dark_oak_bark",
+                        "functions": [
+                          {
+                            "function": "minecraft:set_count",
+                            "count": {
+                              "min": 1,
+                              "max": 4
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "rolls": 1,
+                    "entries": [
+                      {
+                        "type": "minecraft:item",
+                        "name": "minecraft:stripped_dark_oak_log"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "weight": 3,
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "slots": {
+                      "weapon.mainhand": {
+                        "count": 0
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/dark_oak_log"
+}
