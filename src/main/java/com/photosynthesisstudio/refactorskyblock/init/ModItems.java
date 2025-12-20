@@ -1,13 +1,9 @@
 package com.photosynthesisstudio.refactorskyblock.init;
 
 import com.photosynthesisstudio.refactorskyblock.item.*;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -29,16 +25,13 @@ public class ModItems {
     //简易工具
     public static final DeferredItem<Item> SIMPLE_SHOVEL = ITEM_REG.registerItem("simple_shovel",
             props -> new ShovelItem(
-                    ModToolMaterial.SIMPLE, 1.0f, -3.0f, props
-                    .durability(10)));
+                    ModToolMaterial.SIMPLE, 1.0f, -3.0f, props));
     public static final DeferredItem<Item> SIMPLE_PICKAXE = ITEM_REG.registerItem("simple_pickaxe",
             props -> new Item(props.pickaxe(
-                    ModToolMaterial.SIMPLE, 0.5f, -3.0f)
-                    .durability(30)));
+                    ModToolMaterial.SIMPLE, 0.5f, -3.0f)));
     public static final DeferredItem<Item> SIMPLE_AXE = ITEM_REG.registerItem("simple_axe",
             props -> new AxeItem(
-                    ModToolMaterial.SIMPLE, 4.0f, -3.5f, props
-                    .durability(30)));
+                    ModToolMaterial.SIMPLE, 4.0f, -3.5f, props));
     public static final DeferredItem<Item> SIMPLE_HOE = ITEM_REG.registerItem("simple_hoe",
             props -> new HoeItem(
                     ModToolMaterial.SIMPLE, 0.0f, -3.0f, props));
