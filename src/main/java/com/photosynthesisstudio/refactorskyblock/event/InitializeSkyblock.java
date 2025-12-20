@@ -139,6 +139,13 @@ public class InitializeSkyblock {
             LOGGER.info("Initialize %s items complete".formatted(player.getName()));
         }
 
+        Identifier id = Identifier.fromNamespaceAndPath(MODID, "creative_modifier");
+        AttributeModifier modifier = new AttributeModifier(id, 10, AttributeModifier.Operation.ADD_VALUE);
+        AttributeMap attributes = player.getAttributes();
+
+        attributes.getInstance(Attributes.BLOCK_INTERACTION_RANGE).removeModifier(modifier);
+        attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).removeModifier(modifier);
+
         LOGGER.info("Initialize player attributes complete");
     }
 
@@ -155,12 +162,12 @@ public class InitializeSkyblock {
             attributes.getInstance(Attributes.BLOCK_INTERACTION_RANGE).addTransientModifier(modifier);
             attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).addTransientModifier(modifier);
 
-            LOGGER.info("%s switched game mode to creative, add modifier complete.".formatted(player.getName()));
+            LOGGER.info("%s switched game mode to creative, add modifier complete.".formatted(player.getDisplayName()));
         } else {
             attributes.getInstance(Attributes.BLOCK_INTERACTION_RANGE).removeModifier(modifier);
             attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).removeModifier(modifier);
 
-            LOGGER.info("%s switched other game mode, remove modifier removed.".formatted(player.getName()));
+            LOGGER.info("%s switched other game mode, remove modifier removed.".formatted(player.getDisplayName()));
         }
     }
 }
