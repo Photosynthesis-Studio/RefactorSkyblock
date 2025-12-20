@@ -25,7 +25,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class BoneBowlItem extends Item {
     public BoneBowlItem(Properties properties) {
-        super(properties);
+        super(properties.stacksTo(16));
     }
 
     @Override

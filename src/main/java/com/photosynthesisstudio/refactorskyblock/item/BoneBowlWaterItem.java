@@ -3,15 +3,16 @@ package com.photosynthesisstudio.refactorskyblock.item;
 import com.photosynthesisstudio.refactorskyblock.init.ModItems;
 import com.photosynthesisstudio.refactorskyblock.init.ModSoundEvents;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -20,7 +21,9 @@ import net.minecraft.world.level.gameevent.GameEvent;
 
 public class BoneBowlWaterItem extends Item {
     public BoneBowlWaterItem(Properties properties) {
-        super(properties);
+        super(properties.component(DataComponents.CONSUMABLE, Consumables.DEFAULT_DRINK)
+                .usingConvertsTo(ModItems.BONE_BOWL.get())
+                .stacksTo(1));
     }
 
     @Override
