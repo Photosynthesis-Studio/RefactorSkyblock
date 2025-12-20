@@ -7,16 +7,27 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.ItemAttributeModifierEvent;
 
 public class AddItemAttributeModifier {
     @SubscribeEvent
     public void addItemAttributeModifier(ItemAttributeModifierEvent event) {
-        tool(ModItems.SIMPLE_AXE.get(), 0.75f, 0.75f, event);
-        tool(ModItems.SIMPLE_HOE.get(), 1.0f, 1.0f, event);
-        tool(ModItems.SIMPLE_PICKAXE.get(), 1.0f, 1.0f, event);
-        tool(ModItems.SIMPLE_SHOVEL.get(), 1.0f, 1.0f, event);
+        tool(ModItems.SIMPLE_AXE.get(), 0.75f, event);
+        tool(ModItems.SIMPLE_HOE.get(), 1.0f, event);
+        tool(ModItems.SIMPLE_PICKAXE.get(), 1.0f,  event);
+        tool(ModItems.SIMPLE_SHOVEL.get(), 1.0f, event);
+
+        tool(Items.WOODEN_AXE, 0.75f, event);
+        tool(Items.WOODEN_HOE, 1.25f, event);
+        tool(Items.WOODEN_PICKAXE, 1.0f, event);
+        tool(Items.WOODEN_SHOVEL, 1.0f, event);
+        tool(Items.WOODEN_SWORD, 3.0f, event);
+    }
+
+    private void tool(Item item, float interactionRange, ItemAttributeModifierEvent event) {
+        tool(item, interactionRange, interactionRange, event);
     }
 
     private void tool(Item item, float blockRange, float entityRange, ItemAttributeModifierEvent event) {
