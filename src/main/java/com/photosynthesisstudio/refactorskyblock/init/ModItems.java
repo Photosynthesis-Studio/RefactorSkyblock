@@ -34,8 +34,8 @@ public class ModItems {
             props -> new Item(props.pickaxe(
                     ModToolMaterial.SIMPLE, 0.5f, -3.0f)));
     public static final DeferredItem<Item> SIMPLE_AXE = ITEM_REG.registerItem("simple_axe",
-            props -> new Item(props.axe(
-                    ModToolMaterial.SIMPLE, 4.0f, -3.5f)));
+            props -> new AxeItem(
+                    ModToolMaterial.SIMPLE, 4.0f, -3.5f, props));
     public static final DeferredItem<Item> SIMPLE_HOE = ITEM_REG.registerItem("simple_hoe",
             props -> new Item(props.hoe(
                     ModToolMaterial.SIMPLE, 0.0f, -3.0f)));
