@@ -1,5 +1,6 @@
 package com.photosynthesisstudio.refactorskyblock;
 
+import com.photosynthesisstudio.refactorskyblock.event.AddItemAttributeModifier;
 import com.photosynthesisstudio.refactorskyblock.event.InitializeSkyblock;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -26,6 +27,7 @@ public class RefactorSkyblock {
 
     public RefactorSkyblock(IEventBus modEventBus, ModContainer modContainer) {
         NeoForge.EVENT_BUS.register(new InitializeSkyblock());
+        NeoForge.EVENT_BUS.register(new AddItemAttributeModifier());
 
         modEventBus.register(new RefactorSkyblockDatagen());
 
