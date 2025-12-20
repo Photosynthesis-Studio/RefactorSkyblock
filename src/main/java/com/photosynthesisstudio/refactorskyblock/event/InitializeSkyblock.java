@@ -133,12 +133,6 @@ public class InitializeSkyblock {
             player.addItem(new ItemStack(Items.RED_BUNDLE));
             player.addItem(new ItemStack(Items.SPYGLASS));
 
-            // 能玩模式
-            if (RefactorSkyblockConfig.CAN_PLAY_MODE.get()) {
-                player.addItem(new ItemStack(Items.OAK_PLANKS, 4));
-                sourceStack.sendSystemMessage(Component.translatable("text.onPlayerLoggedIn.2"));
-            }
-
             // 初始化
             player.setData(PLAYER_INITIALIZE, true);
 
