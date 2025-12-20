@@ -62,7 +62,7 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addSound(ModSoundEvents.BONE_BOWL_EMPTY, "骨碗：倒空");
         addSound(ModSoundEvents.BONE_BOWL_FILL, "骨碗：装满");
 
-        add("text.onPlayerLoggedIn.1", "欢迎游玩 异构空岛 v0.1.0");
+        add("text.onPlayerLoggedIn.1", "欢迎游玩 异构空岛 v0.1.2");
         add("text.onPlayerLoggedIn.2", "能玩模式 字面意思 记得死亡不掉落");
 
         addAdvancement("battle", "crafting_stone_sword", "战斗升级", "使用1个圆石和1个木棍来合成石剑，增强你的战斗能力");
