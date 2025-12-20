@@ -1,5 +1,5 @@
 {
-    "parent": "refactorskyblock:minecraft/get_bone_meal",
+    "parent": "refactorskyblock:minecraft/get_plant_fertilizer",
     "criteria": {
         "get_seeds": {
             "conditions": {

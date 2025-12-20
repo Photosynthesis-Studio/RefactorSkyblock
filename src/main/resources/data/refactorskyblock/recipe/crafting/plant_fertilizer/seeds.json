@@ -4,13 +4,13 @@
   "group": "bone_meal",
   "show_notification": false,
   "key": {
-    "#": "minecraft:wheat"
+    "#": "#c:seeds"
   },
   "pattern": [
     "#"
   ],
   "result": {
-    "id": "minecraft:bone_meal",
-    "count": 2
+    "id": "refactorskyblock:plant_fertilizer",
+    "count": 1
   }
 }

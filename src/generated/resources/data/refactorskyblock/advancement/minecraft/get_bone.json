@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/get_plank",
+  "criteria": {
+    "get_bone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_bone.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:bone"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_bone.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_bone"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

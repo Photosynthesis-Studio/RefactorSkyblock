@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/get_plank",
+  "criteria": {
+    "get_simple_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "refactorskyblock:simple_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_simple_pickaxe.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "refactorskyblock:simple_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_simple_pickaxe.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_simple_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

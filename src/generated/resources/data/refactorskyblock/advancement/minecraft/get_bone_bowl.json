@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/get_bone",
+  "criteria": {
+    "get_bone_bowl": {
+      "conditions": {
+        "items": [
+          {
+            "items": "refactorskyblock:bone_bowl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_bone_bowl.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "refactorskyblock:bone_bowl"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_bone_bowl.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_bone_bowl"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

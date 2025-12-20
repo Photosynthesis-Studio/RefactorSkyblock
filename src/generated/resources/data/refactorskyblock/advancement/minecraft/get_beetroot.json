@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/get_seeds",
+  "criteria": {
+    "get_beetroot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:beetroot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_beetroot.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:beetroot"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_beetroot.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_beetroot"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

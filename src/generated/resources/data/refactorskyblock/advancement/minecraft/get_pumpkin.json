@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/get_seeds",
+  "criteria": {
+    "get_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:pumpkin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_pumpkin.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:pumpkin"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_pumpkin.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_pumpkin"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

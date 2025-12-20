@@ -24,9 +24,9 @@ public class ModAdvancementGenerator implements AdvancementSubProvider {
     public void generate(HolderLookup.@NotNull Provider registries, @NotNull Consumer<AdvancementHolder> saver) {
         inventoryChangedAdvancement(Items.BONE_BLOCK,
                 "minecraft",
-                "get_bone_meal",
+                "get_bone",
                 saver);
-        inventoryChangedAdvancement(Items.BONE_MEAL,
+        inventoryChangedAdvancement(ModItems.PLANT_FERTILIZER.get(),
                 "minecraft",
                 "get_wood",
                 saver);
@@ -38,9 +38,17 @@ public class ModAdvancementGenerator implements AdvancementSubProvider {
                 "minecraft",
                 "crafting_leather",
                 saver);
+        inventoryChangedAdvancement(Items.BONE_MEAL,
+                "minecraft",
+                "get_bone",
+                saver);
+        inventoryChangedAdvancement(Items.BONE,
+                "minecraft",
+                "get_plank",
+                saver);
         inventoryChangedAdvancement(ModItems.BONE_BOWL.get(),
                 "minecraft",
-                "get_bone_meal",
+                "get_bone",
                 saver);
         inventoryChangedAdvancement(ModItems.SIMPLE_HOE.get(),
                 "minecraft",

@@ -77,7 +77,9 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("minecraft", "get_bone_block", "头盖骨建材", "用4个骨粉合成骨块，用于各种建筑");
         addAdvancement("minecraft", "eat_bark", "不是你真吃啊?", "孩子牙口挺好, 但是嘴有点馋");
         addAdvancement("minecraft", "get_bone_bowl", "头盖骨饭碗", "用2个骨头来合成骨碗");
-        addAdvancement("minecraft", "get_bone_meal", "金坷垃", "用树皮合成骨粉，增加你的产量，种子也可以合成骨粉");
+        addAdvancement("minecraft", "get_plant_fertilizer", "回收再利用", "用植物合成植物肥, 催熟作物");
+        addAdvancement("minecraft", "get_bone_meal", "金坷垃", "这个是正宗的");
+        addAdvancement("minecraft", "get_bone", "硬骨头", "嘟嘟哒嘟嘟哒");
         addAdvancement("minecraft", "get_simple_axe", "这真的能用吗?", "合成一把简易斧");
         addAdvancement("minecraft", "get_simple_hoe", "开垦荒岛", "制作简易锄");
         addAdvancement("minecraft", "get_simple_pickaxe", "……这玩意有用吗", "制作简易镐");

@@ -1,0 +1,35 @@
+{
+  "parent": "refactorskyblock:minecraft/get_seeds",
+  "criteria": {
+    "get_melon_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:melon_slice"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_melon_slice.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:melon_slice"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_melon_slice.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_melon_slice"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

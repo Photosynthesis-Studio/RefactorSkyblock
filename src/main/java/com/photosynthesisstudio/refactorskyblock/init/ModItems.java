@@ -28,17 +28,20 @@ public class ModItems {
 
     //简易工具
     public static final DeferredItem<Item> SIMPLE_SHOVEL = ITEM_REG.registerItem("simple_shovel",
-            props -> new Item(props.shovel(
-                    ModToolMaterial.SIMPLE, 1.0f, -3.0f)));
+            props -> new ShovelItem(
+                    ModToolMaterial.SIMPLE, 1.0f, -3.0f, props
+                    .durability(10)));
     public static final DeferredItem<Item> SIMPLE_PICKAXE = ITEM_REG.registerItem("simple_pickaxe",
             props -> new Item(props.pickaxe(
-                    ModToolMaterial.SIMPLE, 0.5f, -3.0f)));
+                    ModToolMaterial.SIMPLE, 0.5f, -3.0f)
+                    .durability(30)));
     public static final DeferredItem<Item> SIMPLE_AXE = ITEM_REG.registerItem("simple_axe",
             props -> new AxeItem(
-                    ModToolMaterial.SIMPLE, 4.0f, -3.5f, props));
+                    ModToolMaterial.SIMPLE, 4.0f, -3.5f, props
+                    .durability(30)));
     public static final DeferredItem<Item> SIMPLE_HOE = ITEM_REG.registerItem("simple_hoe",
-            props -> new Item(props.hoe(
-                    ModToolMaterial.SIMPLE, 0.0f, -3.0f)));
+            props -> new HoeItem(
+                    ModToolMaterial.SIMPLE, 0.0f, -3.0f, props));
 
     // 树
     public static final DeferredItem<Item> ACACIA_BARK = bark("acacia");
