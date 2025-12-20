@@ -3,10 +3,10 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    "minecraft:stripped_bamboo_block"
+    "#minecraft:crimson_stems"
   ],
   "result": {
-    "id": "minecraft:bamboo_planks",
+    "id": "minecraft:crimson_planks",
     "count": 1
   }
 }

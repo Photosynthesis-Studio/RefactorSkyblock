@@ -3,10 +3,10 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    "minecraft:stripped_mangrove_wood"
+    "#minecraft:dark_oak_logs"
   ],
   "result": {
-    "id": "minecraft:mangrove_planks",
+    "id": "minecraft:dark_oak_planks",
     "count": 1
   }
 }

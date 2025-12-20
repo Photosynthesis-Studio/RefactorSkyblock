@@ -3,10 +3,10 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    "minecraft:stripped_cherry_wood"
+    "#minecraft:warped_stems"
   ],
   "result": {
-    "id": "minecraft:cherry_planks",
+    "id": "minecraft:warped_planks",
     "count": 1
   }
 }

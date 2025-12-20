@@ -3,10 +3,10 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    "minecraft:stripped_crimson_hyphae"
+    "#minecraft:oak_logs"
   ],
   "result": {
-    "id": "minecraft:crimson_planks",
+    "id": "minecraft:oak_planks",
     "count": 1
   }
 }

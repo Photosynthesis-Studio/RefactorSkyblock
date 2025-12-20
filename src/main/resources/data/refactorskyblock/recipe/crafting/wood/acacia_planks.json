@@ -3,10 +3,10 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    "minecraft:stripped_pale_oak_wood"
+    "#minecraft:acacia_logs"
   ],
   "result": {
-    "id": "minecraft:pale_oak_planks",
+    "id": "minecraft:acacia_planks",
     "count": 1
   }
 }

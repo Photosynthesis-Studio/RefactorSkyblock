@@ -3,10 +3,10 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    "minecraft:stripped_jungle_wood"
+    "#minecraft:mangrove_logs"
   ],
   "result": {
-    "id": "minecraft:jungle_planks",
+    "id": "minecraft:mangrove_planks",
     "count": 1
   }
 }

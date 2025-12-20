@@ -3,10 +3,10 @@
   "category": "building",
   "group": "planks",
   "ingredients": [
-    "minecraft:stripped_warped_hyphae"
+    "#minecraft:jungle_logs"
   ],
   "result": {
-    "id": "minecraft:warped_planks",
+    "id": "minecraft:jungle_planks",
     "count": 1
   }
 }
