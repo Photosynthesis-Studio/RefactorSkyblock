@@ -37,7 +37,6 @@ public class ModLangEnUsProvider extends LanguageProvider {
         add(BONE_BOWL, "Bone Bowl");
         add(BONE_BOWL_WATER, "Water Bone Bowl");
 
-        add(STONE_ARROW, "Stone Arrow");
         add(STONE_NUGGET, "Stone Nugget");
 
         add(ACACIA_BARK, "Acacia Bark");

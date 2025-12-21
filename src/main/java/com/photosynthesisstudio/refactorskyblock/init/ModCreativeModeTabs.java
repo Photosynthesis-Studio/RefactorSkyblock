@@ -38,7 +38,6 @@ public class ModCreativeModeTabs {
                         output.accept(BONE_BOWL);
                         output.accept(BONE_BOWL_WATER);
 
-                        output.accept(STONE_ARROW);
                         output.accept(STONE_NUGGET);
 
                         output.accept(SIMPLE_SHOVEL);

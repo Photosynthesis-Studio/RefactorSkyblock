@@ -37,7 +37,6 @@ public class ModLangZhCnProvider extends LanguageProvider {
         add(BONE_BOWL, "骨碗");
         add(BONE_BOWL_WATER, "盛有水的骨碗");
 
-        add(STONE_ARROW, "石箭");
         add(STONE_NUGGET, "石粒");
 
         add(ACACIA_BARK, "金合欢树皮");

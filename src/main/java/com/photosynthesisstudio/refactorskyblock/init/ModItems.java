@@ -19,7 +19,6 @@ public class ModItems {
     public static final DeferredItem<Item> BONE_BOWL = registerItem("bone_bowl", BoneBowlItem::new);
     public static final DeferredItem<Item> BONE_BOWL_WATER = registerItem("bone_bowl_water", BoneBowlWaterItem::new);
 
-    public static final DeferredItem<Item> STONE_ARROW = registerSimpleItem("stone_arrow");
     public static final DeferredItem<Item> STONE_NUGGET = registerSimpleItem("stone_nugget");
 
     //简易工具
