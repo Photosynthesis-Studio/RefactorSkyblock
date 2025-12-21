@@ -1,4 +1,5 @@
 {
+  "block.refactorskyblock.unfinished_campfire": "未完成的篝火",
   "generator.refactorskyblock.skyblock": "Refactor Skyblock",
   "item.refactorskyblock.acacia_bark": "Acacia Bark",
   "item.refactorskyblock.birch_bark": "Birch Bark",
@@ -17,7 +18,6 @@
   "item.refactorskyblock.simple_pickaxe": "Simple Pickaxe",
   "item.refactorskyblock.simple_shovel": "Simple Shovel",
   "item.refactorskyblock.spruce_bark": "Spruce Bark",
-  "item.refactorskyblock.stone_arrow": "Stone Arrow",
   "item.refactorskyblock.stone_nugget": "Stone Nugget",
   "item.refactorskyblock.warped_bark": "Warped Bark",
   "itemGroup.refactorskyblock.items": "Refactor Skyblock | Items",

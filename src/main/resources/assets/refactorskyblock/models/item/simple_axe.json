@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "refactorskyblock:item/tool/simple_axe"
+    "layer0": "refactorskyblock:item/tool/simple/simple_axe"
   }
 }
