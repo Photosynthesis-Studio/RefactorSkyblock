@@ -14,6 +14,7 @@ import net.neoforged.neoforge.event.ItemAttributeModifierEvent;
 public class AddItemAttributeModifier {
     @SubscribeEvent
     public void addItemAttributeModifier(ItemAttributeModifierEvent event) {
+        tool(ModItems.BARK_WAND.get(), 1.0f, event);
         tool(ModItems.SIMPLE_AXE.get(), 0.75f, event);
         tool(ModItems.SIMPLE_HOE.get(), 1.0f, event);
         tool(ModItems.SIMPLE_PICKAXE.get(), 1.0f,  event);
