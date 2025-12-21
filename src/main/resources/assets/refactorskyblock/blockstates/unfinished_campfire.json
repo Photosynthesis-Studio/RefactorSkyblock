@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "refactorskyblock:block/unfinished_campfire",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "refactorskyblock:block/unfinished_campfire",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "refactorskyblock:block/unfinished_campfire"
+    },
+    "facing=west": {
+      "model": "refactorskyblock:block/unfinished_campfire",
+      "y": 90
+    }
+  }
+}

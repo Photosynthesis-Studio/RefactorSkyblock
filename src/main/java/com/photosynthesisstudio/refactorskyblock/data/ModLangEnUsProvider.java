@@ -1,22 +1,26 @@
 package com.photosynthesisstudio.refactorskyblock.data;
 
+import com.photosynthesisstudio.refactorskyblock.init.ModBlocks;
 import com.photosynthesisstudio.refactorskyblock.init.ModCreativeModeTabs;
+import com.photosynthesisstudio.refactorskyblock.init.ModItems;
 import com.photosynthesisstudio.refactorskyblock.init.ModSoundEvents;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.data.LanguageProvider;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblock.MODID;
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig.CAN_PLAY_MODE;
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig.INITIAL_FOOD_NUMBER;
-import static com.photosynthesisstudio.refactorskyblock.init.ModItems.*;
 
 public class ModLangEnUsProvider extends LanguageProvider {
     public ModLangEnUsProvider(PackOutput output) {
@@ -32,29 +36,31 @@ public class ModLangEnUsProvider extends LanguageProvider {
         addConfiguration(INITIAL_FOOD_NUMBER, "Initial Food Number", "If a new player logs into the world, give him the amount of food.");
         addConfiguration(CAN_PLAY_MODE, "Can Play Mode", "...just can play");
 
-        add(PLANT_FERTILIZER, "Plant Fertilizer");
+        add(ModItems.PLANT_FERTILIZER, "Plant Fertilizer");
 
-        add(BONE_BOWL, "Bone Bowl");
-        add(BONE_BOWL_WATER, "Water Bone Bowl");
+        add(ModItems.BONE_BOWL, "Bone Bowl");
+        add(ModItems.BONE_BOWL_WATER, "Water Bone Bowl");
 
-        add(STONE_NUGGET, "Stone Nugget");
+        add(ModItems.STONE_NUGGET, "Stone Nugget");
 
-        add(ACACIA_BARK, "Acacia Bark");
-        add(BIRCH_BARK, "Birch Bark");
-        add(CHERRY_BARK, "Cherry Bark");
-        add(CRIMSON_BARK, "Crimson Bark");
-        add(DARK_OAK_BARK, "Dark Oak Bark");
-        add(JUNGLE_BARK, "Jungle Bark");
-        add(MANGROVE_BARK, "Mangrove Bark");
-        add(OAK_BARK, "Oak Bark");
-        add(PALE_OAK_BARK, "Pale Oak Bark");
-        add(SPRUCE_BARK, "Spruce Bark");
-        add(WARPED_BARK, "Warped Bark");
+        add(ModItems.ACACIA_BARK, "Acacia Bark");
+        add(ModItems.BIRCH_BARK, "Birch Bark");
+        add(ModItems.CHERRY_BARK, "Cherry Bark");
+        add(ModItems.CRIMSON_BARK, "Crimson Bark");
+        add(ModItems.DARK_OAK_BARK, "Dark Oak Bark");
+        add(ModItems.JUNGLE_BARK, "Jungle Bark");
+        add(ModItems.MANGROVE_BARK, "Mangrove Bark");
+        add(ModItems.OAK_BARK, "Oak Bark");
+        add(ModItems.PALE_OAK_BARK, "Pale Oak Bark");
+        add(ModItems.SPRUCE_BARK, "Spruce Bark");
+        add(ModItems.WARPED_BARK, "Warped Bark");
 
-        add(SIMPLE_AXE, "Simple Axe");
-        add(SIMPLE_HOE, "Simple Hoe");
-        add(SIMPLE_PICKAXE, "Simple Pickaxe");
-        add(SIMPLE_SHOVEL, "Simple Shovel");
+        add(ModItems.SIMPLE_AXE, "Simple Axe");
+        add(ModItems.SIMPLE_HOE, "Simple Hoe");
+        add(ModItems.SIMPLE_PICKAXE, "Simple Pickaxe");
+        add(ModItems.SIMPLE_SHOVEL, "Simple Shovel");
+
+        add(ModBlocks.UNFINISHED_CAMPFIRE, "未完成的篝火");
 
         addCreativeModeTab(ModCreativeModeTabs.ITEMS_TAB, "Refactor Skyblock | Items");
 
@@ -86,6 +92,10 @@ public class ModLangEnUsProvider extends LanguageProvider {
 
     private void add(DeferredItem<@org.jetbrains.annotations.NotNull Item> item, String name) {
         this.add(item.get(), name);
+    }
+
+    private void add(DeferredBlock<@NotNull Block> block, String name) {
+        this.add(block.get(), name);
     }
 
     private String configPath(String configuration) {

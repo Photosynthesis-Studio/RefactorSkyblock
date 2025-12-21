@@ -1,11 +1,16 @@
 package com.photosynthesisstudio.refactorskyblock.item;
+import com.photosynthesisstudio.refactorskyblock.init.ModItems;
+import com.photosynthesisstudio.refactorskyblock.init.tags.ModItemTags;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.event.furnace.FurnaceFuelBurnTimeEvent;
 
 public class BarkItem extends Item {
     public BarkItem(Properties properties) {

@@ -1,9 +1,11 @@
 package com.photosynthesisstudio.refactorskyblock.init;
 
 import com.photosynthesisstudio.refactorskyblock.item.*;
+import net.minecraft.core.Holder;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -22,6 +24,9 @@ public class ModItems {
     public static final DeferredItem<Item> STONE_NUGGET = registerSimpleItem("stone_nugget");
 
     //简易工具
+    public static final DeferredItem<Item> BARK_WAND = ITEM_REG.registerItem("bark_wand",
+            props -> new Item(props.sword(
+                    ModToolMaterial.SIMPLE, 2.0f, -2.5f)));
     public static final DeferredItem<Item> SIMPLE_SHOVEL = ITEM_REG.registerItem("simple_shovel",
             props -> new ShovelItem(
                     ModToolMaterial.SIMPLE, 1.0f, -3.0f, props));
@@ -48,6 +53,8 @@ public class ModItems {
     public static final DeferredItem<Item> SPRUCE_BARK = bark("spruce");
     public static final DeferredItem<Item> WARPED_BARK = bark("warped");
 
+    public static final DeferredItem<BlockItem> UNFINISHED_CAMPFIRE = blockItem(ModBlocks.UNFINISHED_CAMPFIRE);
+
     private static <I extends Item> DeferredItem<I> registerItem(String name, Function<Item.Properties, ? extends I> func) {
         return ITEM_REG.registerItem(name, func);
     }
@@ -58,6 +65,10 @@ public class ModItems {
 
     private static DeferredItem<Item> bark(String logName) {
         return ITEM_REG.registerItem(logName + "_bark", BarkItem::new);
+    }
+
+    private static DeferredItem<BlockItem> blockItem(Holder<Block> block) {
+        return ITEM_REG.registerSimpleBlockItem(block);
     }
 
     public static AttributeModifier attributeModifier(String name, float amount, AttributeModifier.Operation attributeModifier) {

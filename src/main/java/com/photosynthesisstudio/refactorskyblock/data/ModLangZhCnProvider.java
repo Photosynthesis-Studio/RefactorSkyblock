@@ -1,22 +1,27 @@
 package com.photosynthesisstudio.refactorskyblock.data;
 
+import com.photosynthesisstudio.refactorskyblock.init.ModBlocks;
 import com.photosynthesisstudio.refactorskyblock.init.ModCreativeModeTabs;
+import com.photosynthesisstudio.refactorskyblock.init.ModItems;
 import com.photosynthesisstudio.refactorskyblock.init.ModSoundEvents;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.data.LanguageProvider;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblock.MODID;
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig.CAN_PLAY_MODE;
 import static com.photosynthesisstudio.refactorskyblock.RefactorSkyblockConfig.INITIAL_FOOD_NUMBER;
-import static com.photosynthesisstudio.refactorskyblock.init.ModItems.*;
 
 public class ModLangZhCnProvider extends LanguageProvider {
     public ModLangZhCnProvider(PackOutput output) {
@@ -32,29 +37,32 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addConfiguration(INITIAL_FOOD_NUMBER, "初始化食物数", "当有新玩家加入世界时, 给予他这个数量的食物.");
         addConfiguration(CAN_PLAY_MODE, "能玩模式", "...能玩就行");
 
-        add(PLANT_FERTILIZER, "植物肥");
+        add(ModItems.PLANT_FERTILIZER, "植物肥");
 
-        add(BONE_BOWL, "骨碗");
-        add(BONE_BOWL_WATER, "盛有水的骨碗");
+        add(ModItems.BONE_BOWL, "骨碗");
+        add(ModItems.BONE_BOWL_WATER, "盛有水的骨碗");
 
-        add(STONE_NUGGET, "石粒");
+        add(ModItems.STONE_NUGGET, "石粒");
 
-        add(ACACIA_BARK, "金合欢树皮");
-        add(BIRCH_BARK, "白桦树皮");
-        add(CHERRY_BARK, "樱花树皮");
-        add(CRIMSON_BARK, "绯红树皮");
-        add(DARK_OAK_BARK, "深色橡木树皮");
-        add(JUNGLE_BARK, "丛林树皮");
-        add(MANGROVE_BARK, "红树树皮");
-        add(OAK_BARK, "橡木树皮");
-        add(PALE_OAK_BARK, "苍白橡木树皮");
-        add(SPRUCE_BARK, "云杉树皮");
-        add(WARPED_BARK, "扭曲树皮");
+        add(ModItems.ACACIA_BARK, "金合欢树皮");
+        add(ModItems.BIRCH_BARK, "白桦树皮");
+        add(ModItems.CHERRY_BARK, "樱花树皮");
+        add(ModItems.CRIMSON_BARK, "绯红树皮");
+        add(ModItems.DARK_OAK_BARK, "深色橡木树皮");
+        add(ModItems.JUNGLE_BARK, "丛林树皮");
+        add(ModItems.MANGROVE_BARK, "红树树皮");
+        add(ModItems.OAK_BARK, "橡木树皮");
+        add(ModItems.PALE_OAK_BARK, "苍白橡木树皮");
+        add(ModItems.SPRUCE_BARK, "云杉树皮");
+        add(ModItems.WARPED_BARK, "扭曲树皮");
 
-        add(SIMPLE_AXE, "简易斧");
-        add(SIMPLE_HOE, "简易锄");
-        add(SIMPLE_PICKAXE, "简易镐");
-        add(SIMPLE_SHOVEL, "简易锹");
+        add(ModItems.BARK_WAND, "树皮棍");
+        add(ModItems.SIMPLE_AXE, "简易斧");
+        add(ModItems.SIMPLE_HOE, "简易锄");
+        add(ModItems.SIMPLE_PICKAXE, "简易镐");
+        add(ModItems.SIMPLE_SHOVEL, "简易锹");
+
+        add(ModBlocks.UNFINISHED_CAMPFIRE, "未点燃的营火");
 
         addCreativeModeTab(ModCreativeModeTabs.ITEMS_TAB, "异构空岛 | 物品");
 
@@ -112,6 +120,10 @@ public class ModLangZhCnProvider extends LanguageProvider {
 
     private void add(DeferredItem<@org.jetbrains.annotations.NotNull Item> item, String name) {
         this.add(item.get(), name);
+    }
+
+    private void add(DeferredBlock<@NotNull Block> block, String name) {
+        this.add(block.get(), name);
     }
 
     private String configPath(String configuration) {

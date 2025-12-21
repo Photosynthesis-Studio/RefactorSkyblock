@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 
 public class ModItemTags {
     public static final TagKey<Item> SIMPLE_TOOL_MATERIALS = bind("simple_tool_materials");
+    public static final TagKey<Item> BARKS = bind("barks");
 
     private static TagKey<Item> bind(String name) {
         return TagKey.create(Registries.ITEM, Identifier.withDefaultNamespace(name));

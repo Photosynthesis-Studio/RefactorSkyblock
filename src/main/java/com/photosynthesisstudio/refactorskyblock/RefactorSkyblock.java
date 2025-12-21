@@ -13,6 +13,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.neoforge.common.NeoForge;
 
+import static com.photosynthesisstudio.refactorskyblock.init.ModBlocks.BLOCK_REG;
 import static com.photosynthesisstudio.refactorskyblock.init.ModCreativeModeTabs.TAB_REG;
 import static com.photosynthesisstudio.refactorskyblock.init.ModItems.ITEM_REG;
 import static com.photosynthesisstudio.refactorskyblock.init.ModSoundEvents.SOUND_REG;
@@ -35,6 +36,7 @@ public class RefactorSkyblock {
         ITEM_REG.register(modEventBus);
         TAB_REG.register(modEventBus);
         SOUND_REG.register(modEventBus);
+        BLOCK_REG.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.CLIENT, RefactorSkyblockConfig.CLIENT.build());
         modContainer.registerConfig(ModConfig.Type.COMMON, RefactorSkyblockConfig.COMMON.build());
