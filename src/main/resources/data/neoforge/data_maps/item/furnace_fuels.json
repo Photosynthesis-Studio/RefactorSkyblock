@@ -1,0 +1,37 @@
+{
+  "values": {
+    "refactorskyblock:acacia_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:birch_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:cherry_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:crimson_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:dark_oak_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:jungle_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:mangrove_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:oak_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:pale_oak_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:spruce_bark": {
+      "burn_time": 200
+    },
+    "refactorskyblock:warped_bark": {
+      "burn_time": 200
+    }
+  }
+}
