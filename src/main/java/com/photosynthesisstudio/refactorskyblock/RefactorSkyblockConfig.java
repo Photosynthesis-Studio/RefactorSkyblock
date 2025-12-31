@@ -18,5 +18,5 @@ public class RefactorSkyblockConfig {
     public static final ModConfigSpec.IntValue INITIAL_FOOD_NUMBER = COMMON
             .comment("If a new player logs into the world, give him the amount of food.")
             .translation(NAME_KEY.formatted("initialFoodNumber"))
-            .defineInRange("initialFoodNumber", 64, 0, Integer.MAX_VALUE);
+            .defineInRange("initialFoodNumber", 16, 0, Integer.MAX_VALUE);
 }
