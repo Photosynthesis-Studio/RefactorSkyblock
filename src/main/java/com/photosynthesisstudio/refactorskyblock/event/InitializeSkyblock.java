@@ -39,8 +39,9 @@ public class InitializeSkyblock {
         Level level = (Level) event.getLevel();
 
         // 服务端 主世界 0 -64 0 基岩?
-        if (level.isClientSide() || level.dimension() != Level.OVERWORLD
-                || !level.isEmptyBlock(new BlockPos(0, -64, 0))) {
+        if (level.isClientSide()  // 客户端则返回
+                || level.dimension() != Level.OVERWORLD  // 非主世界则返回
+                || level.getBlockState(new BlockPos(0, 64, 0)).is(Blocks.CRYING_OBSIDIAN)) {  // 已有哭泣黑曜石则返回
             return;
         }
 
@@ -147,27 +148,5 @@ public class InitializeSkyblock {
         attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).removeModifier(modifier);
 
         LOGGER.info("Initialize player attributes complete");
-    }
-
-    @SubscribeEvent
-    public void onChangePlayerGameMode(PlayerEvent.PlayerChangeGameModeEvent event) {
-        Player player = event.getEntity();
-        AttributeMap attributes = player.getAttributes();
-        GameType newGameMode = event.getNewGameMode();
-
-        Identifier id = Identifier.fromNamespaceAndPath(MODID, "creative_modifier");
-        AttributeModifier modifier = new AttributeModifier(id, 10, AttributeModifier.Operation.ADD_VALUE);
-
-        if (newGameMode == GameType.CREATIVE) {
-            attributes.getInstance(Attributes.BLOCK_INTERACTION_RANGE).addTransientModifier(modifier);
-            attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).addTransientModifier(modifier);
-
-            LOGGER.info("%s switched game mode to creative, add modifier complete.".formatted(player.getDisplayName()));
-        } else {
-            attributes.getInstance(Attributes.BLOCK_INTERACTION_RANGE).removeModifier(modifier);
-            attributes.getInstance(Attributes.ENTITY_INTERACTION_RANGE).removeModifier(modifier);
-
-            LOGGER.info("%s switched other game mode, remove modifier removed.".formatted(player.getDisplayName()));
-        }
     }
 }
