@@ -21,7 +21,7 @@
             "translate": "advancement.refactorskyblock.minecraft.get_planks.description"
         },
         "icon": {
-            "id": "minecraft:stripped_oak_log",
+            "id": "minecraft:oak_planks",
             "count": 1
         }
     },
