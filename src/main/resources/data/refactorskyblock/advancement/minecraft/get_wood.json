@@ -28,7 +28,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:oak_log"
+      "id": "minecraft:stripped_oak_wood"
     },
     "title": {
       "translate": "advancement.refactorskyblock.minecraft.get_wood.title"

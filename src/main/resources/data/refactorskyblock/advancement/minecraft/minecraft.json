@@ -1,29 +1,29 @@
 {
-    "criteria": {
-        "minecraft": {
-            "trigger": "minecraft:tick"
-        }
-    },
-    "display": {
-        "background": "minecraft:block/oak_planks",
-        "frame": "task",
-        "title": {
-            "translate": "advancement.refactorskyblock.minecraft.minecraft.title"
-        },
-        "announce_to_chat": true,
-        "description": {
-            "translate": "advancement.refactorskyblock.minecraft.minecraft.description"
-        },
-        "show_toast": false,
-        "icon": {
-            "id": "minecraft:grass_block",
-            "count": 1
-        },
-        "hidden": false
-    },
-    "rewards": {
-        "loot": [
-            "refactorskyblock:advancement/minecraft"
-        ]
+  "criteria": {
+    "minecraft": {
+      "trigger": "minecraft:tick"
     }
+  },
+  "display": {
+    "background": "minecraft:block/oak_planks",
+    "frame": "task",
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.minecraft.title"
+    },
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.minecraft.description"
+    },
+    "show_toast": false,
+    "icon": {
+      "id": "minecraft:grass_block",
+      "count": 1
+    },
+    "hidden": false
+  },
+  "rewards": {
+    "loot": [
+      "refactorskyblock:advancement/minecraft"
+    ]
+  }
 }

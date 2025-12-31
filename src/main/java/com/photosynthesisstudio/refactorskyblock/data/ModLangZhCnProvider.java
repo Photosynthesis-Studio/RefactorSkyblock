@@ -79,8 +79,8 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("battle", "kill_spider", "腿越多生物越邪恶", "杀死1只蜘蛛证明你没有蜘蛛恐惧症");
         addAdvancement("battle", "kill_zombie", "杀死姜丝", "杀死1只僵尸证明你的石粒");
         addAdvancement("minecraft", "minecraft", "Minecraft", "欢迎!");
-        addAdvancement("minecraft", "get_wood", "我木头呢?", "空手挖掘木头有概率掉落去皮原木和树皮, 用去皮原木才能合成木板");
-        addAdvancement("minecraft", "get_planks", "1:1合成?!", "黑心商人这一块");
+        addAdvancement("minecraft", "get_wood", "获取去皮原木!", "挖掘木头，然后使用斧子对着原木右键获得去皮原木");
+        addAdvancement("minecraft", "get_planks", "1:1合成?!", "使用去皮原木合成木板");
         addAdvancement("minecraft", "get_bone_block", "头盖骨建材", "用4个骨粉合成骨块，用于各种建筑");
         addAdvancement("minecraft", "eat_bark", "不是你真吃啊?", "孩子牙口挺好, 但是嘴有点馋");
         addAdvancement("minecraft", "get_bone_bowl", "头盖骨饭碗", "用2个骨头来合成骨碗");

@@ -1,27 +1,27 @@
 {
-    "parent": "refactorskyblock:minecraft/get_wood",
-    "criteria": {
-        "eat_barks": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "items": "#refactorskyblock:barks"
-                }
-            }
+  "parent": "refactorskyblock:minecraft/get_wood",
+  "criteria": {
+    "eat_barks": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "#refactorskyblock:barks"
         }
-    },
-    "display": {
-        "frame": "goal",
-        "title": {
-            "translate": "advancement.refactorskyblock.minecraft.eat_bark.title"
-        },
-        "description": {
-            "translate": "advancement.refactorskyblock.minecraft.eat_bark.description"
-        },
-        "icon": {
-            "id": "refactorskyblock:oak_bark",
-            "count": 1
-        },
-        "hidden": true
+      }
     }
+  },
+  "display": {
+    "frame": "goal",
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.eat_bark.title"
+    },
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.eat_bark.description"
+    },
+    "icon": {
+      "id": "refactorskyblock:oak_bark",
+      "count": 1
+    },
+    "hidden": true
+  }
 }

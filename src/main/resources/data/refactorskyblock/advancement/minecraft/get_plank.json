@@ -1,5 +1,5 @@
 {
-    "parent": "refactorskyblock:minecraft/get_wood",
+  "parent": "refactorskyblock:minecraft/get_wood",
     "criteria": {
         "get_logs": {
             "conditions": {
