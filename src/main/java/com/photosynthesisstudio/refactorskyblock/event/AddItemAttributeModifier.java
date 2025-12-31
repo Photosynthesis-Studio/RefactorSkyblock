@@ -44,14 +44,18 @@ public class AddItemAttributeModifier {
         add(item, attributes, amount, EquipmentSlotGroup.MAINHAND, event);
     }
 
+    private static AttributeModifier toolModifier(float amount, AttributeModifier.Operation operation) {
+        return toolModifier("tool_modifier", amount, operation);
+    }
+
+    private static AttributeModifier toolModifier(String name, float amount, AttributeModifier.Operation operation) {
+        return ModItems.attributeModifier(name, amount, operation);
+    }
+
     // 物品 属性 值 位置
     private void add(Item item, Holder<Attribute> attributes, float amount, EquipmentSlotGroup equipmentSlots, ItemAttributeModifierEvent event) {
         if (event.getItemStack().getItem() == item) {
-            event.addModifier(attributes, toolModifier(amount), equipmentSlots);
+            event.addModifier(attributes, toolModifier(amount, AttributeModifier.Operation.ADD_VALUE), equipmentSlots);
         }
-    }
-
-    private static AttributeModifier toolModifier(float amount) {
-        return ModItems.attributeModifier("tool_modifier", amount, AttributeModifier.Operation.ADD_VALUE);
     }
 }
