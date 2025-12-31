@@ -27,19 +27,24 @@ public class AddItemAttributeModifier {
         tool(Items.WOODEN_SWORD, 3.0f, event);
     }
 
+    // 一起加
     private void tool(Item item, float interactionRange, ItemAttributeModifierEvent event) {
         tool(item, interactionRange, interactionRange, event);
     }
 
+    // 分别加
     private void tool(Item item, float blockRange, float entityRange, ItemAttributeModifierEvent event) {
         add(item, Attributes.BLOCK_INTERACTION_RANGE, blockRange, event);
         add(item, Attributes.ENTITY_INTERACTION_RANGE, entityRange, event);
     }
 
+    // 添加属性
+    // 物品 属性 值
     private void add(Item item, Holder<Attribute> attributes, float amount, ItemAttributeModifierEvent event) {
         add(item, attributes, amount, EquipmentSlotGroup.MAINHAND, event);
     }
 
+    // 物品 属性 值 位置
     private void add(Item item, Holder<Attribute> attributes, float amount, EquipmentSlotGroup equipmentSlots, ItemAttributeModifierEvent event) {
         if (event.getItemStack().getItem() == item) {
             event.addModifier(attributes, toolModifier(amount), equipmentSlots);
