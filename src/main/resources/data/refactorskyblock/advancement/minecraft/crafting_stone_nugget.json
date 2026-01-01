@@ -1,0 +1,32 @@
+{
+    "parent": "refactorskyblock:minecraft/crafting_wooden_pickaxe",
+    "criteria": {
+        "crafting_stone_nugget": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/stone_nugget"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "advancement.refactorskyblock.minecraft.crafting_stone_nugget.title"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancement.refactorskyblock.minecraft.crafting_stone_nugget.description"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "refactorskyblock:stone_nugget",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "crafting_stone_nugget"
+        ]
+    ]
+}

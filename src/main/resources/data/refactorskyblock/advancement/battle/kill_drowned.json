@@ -1,5 +1,5 @@
 {
-    "parent": "refactorskyblock:battle/crafting_wooden_sword",
+    "parent": "refactorskyblock:battle/battle",
     "criteria": {
         "kill_drowned": {
             "trigger": "minecraft:player_killed_entity",

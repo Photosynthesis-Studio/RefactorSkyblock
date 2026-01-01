@@ -69,21 +69,26 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addSound(ModSoundEvents.BONE_BOWL_EMPTY, "骨碗：倒空");
         addSound(ModSoundEvents.BONE_BOWL_FILL, "骨碗：装满");
 
-        add("text.onPlayerLoggedIn.1", "欢迎游玩 异构空岛 v0.1.3");
-        add("text.onPlayerLoggedIn.2", "能玩模式 字面意思 记得死亡不掉落");
+        add("text.onPlayerLoggedIn.1", "欢迎游玩 异构空岛 v0.1.3 \n打开进度并认真查看游戏玩法");
+        add("text.onPlayerLoggedIn.2", "测试模式");
 
+        addAdvancement("battle", "battle", "战斗", "方块和实体的交互距离初始值为2格，所有武器都具有特殊距离，你可以尝试制作一把木剑");
         addAdvancement("battle", "crafting_stone_sword", "战斗升级", "使用1个圆石和1个木棍来合成石剑，增强你的战斗能力");
-        addAdvancement("battle", "crafting_wooden_sword", "战斗", "合成了1把木剑，你会发现方块和实体交互距离变短了!\n你没感觉错，初始值分别为2.5和1.5，所有武器有特殊距离，战斗需要使用武器!");
-        addAdvancement("battle", "kill_drowned", "杀死一只溺尸", "你真是坏到骨子里了!");
+
+        addAdvancement("battle", "kill_drowned", "是水猴子!", "杀死一只溺尸");
         addAdvancement("battle", "kill_skeleton", "你真是坏到骨子里了", "杀死1只骷髅证明你不是软骨头");
         addAdvancement("battle", "kill_spider", "腿越多生物越邪恶", "杀死1只蜘蛛证明你没有蜘蛛恐惧症");
         addAdvancement("battle", "kill_zombie", "杀死姜丝", "杀死1只僵尸证明你的石粒");
 
         addAdvancement("minecraft", "minecraft", "Minecraft", "欢迎!");
-        addAdvancement("minecraft", "get_stripped_log", "获取裸奔原木", "挖掘木头，然后使用斧子对着原木右键获得去皮原木，扒光原木的衣服");
+        addAdvancement("minecraft", "get_stripped_log", "获取裸奔原木", "砍伐木头，然后使用斧子对着原木右键获得去皮原木，扒光原木的衣服");
         addAdvancement("minecraft", "crafting_planks", "1:1合成?!", "使用去皮原木合成木板，黑心商人");
-        addAdvancement("minecraft", "crafting_wooden_hoe", "开垦荒岛", "制作木锄，开始种地");
+        addAdvancement("minecraft", "crafting_wooden_hoe", "开垦荒岛", "使用3个木棍来制作木锄，开始种地");
         addAdvancement("minecraft", "place_wheat_seeds", "光合作用", "种植小麦，开始科技的第一步，也就是 光 合 作 用~");
+        addAdvancement("minecraft", "crafting_wooden_pickaxe", "采矿时间到!", "用2个木板和1个木棍制作木镐开始挖掘石头，当副手放置方块时，工具可以提升方块放置距离");
+        addAdvancement("minecraft", "crafting_stone_nugget", "这么强?!", "石粒! 使用皮革和石箭打磨出石粒");
+        addAdvancement("minecraft", "crafting_wooden_sword", "出击时间到!", "使用1个木板和1个木棍合成1把木剑，增加你的攻击距离");
+        addAdvancement("minecraft", "get_rotten_flesh", "暗面血肉", "获得腐肉，使用怪物的血肉作为物资来源");
 
 
         addAdvancement("minecraft", "get_bone_block", "头盖骨建材", "用4个骨粉合成骨块，用于各种建筑");

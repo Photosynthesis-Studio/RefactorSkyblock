@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_sword",
+  "show_notification": false,
+  "key": {
+    "#": "minecraft:stick",
+    "@": "#minecraft:planks"
+  },
+  "pattern": [
+    "@",
+    "# "
+  ],
+  "result": {
+    "id": "minecraft:wooden_sword",
+    "count": 1
+  }
+}

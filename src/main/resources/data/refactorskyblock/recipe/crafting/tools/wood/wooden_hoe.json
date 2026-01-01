@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_hoe",
+  "show_notification": false,
+  "key": {
+    "#": "minecraft:stick"
+  },
+  "pattern": [
+    "##",
+    "# "
+  ],
+  "result": {
+    "id": "minecraft:wooden_hoe",
+    "count": 1
+  }
+}

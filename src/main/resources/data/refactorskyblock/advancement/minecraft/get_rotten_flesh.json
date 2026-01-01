@@ -1,7 +1,7 @@
 {
-  "parent": "refactorskyblock:minecraft/get_seeds",
+  "parent": "refactorskyblock:minecraft/crafting_wooden_sword",
   "criteria": {
-    "get_beetroot": {
+    "get_rotten_flesh": {
       "conditions": {
         "items": [
           {
@@ -14,22 +14,19 @@
   },
   "display": {
     "description": {
-      "translate": "advancement.refactorskyblock.minecraft.get_beetroot.description"
+      "translate": "advancement.refactorskyblock.minecraft.get_rotten_flesh.description"
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:beetroot"
+      "id": "minecraft:rotten_flesh"
     },
     "title": {
-      "translate": "advancement.refactorskyblock.minecraft.get_beetroot.title"
+      "translate": "advancement.refactorskyblock.minecraft.get_rotten_flesh.title"
     }
   },
   "requirements": [
     [
-      "get_beetroot"
+      "get_rotten_flesh"
     ]
-  ],
-  "rewards": {
-    "experience": 10
-  }
+  ]
 }

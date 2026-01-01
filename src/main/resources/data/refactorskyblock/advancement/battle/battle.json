@@ -1,0 +1,24 @@
+{
+    "criteria": {
+      "minecraft": {
+        "trigger": "minecraft:tick"
+      }
+    },
+    "display": {
+      "background": "minecraft:block/stone_bricks",
+      "frame": "task",
+      "title": {
+        "translate": "advancement.refactorskyblock.battle.battle.title"
+      },
+      "announce_to_chat": false,
+      "description": {
+        "translate": "advancement.refactorskyblock.battle.battle.description"
+      },
+      "show_toast": false,
+      "icon": {
+        "id": "minecraft:wooden_sword",
+        "count": 1
+      },
+      "hidden": false
+    }
+}
