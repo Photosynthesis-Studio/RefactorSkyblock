@@ -1,0 +1,31 @@
+{
+  "parent": "refactorskyblock:minecraft/get_bone",
+  "criteria": {
+    "get_bone_block": {
+      "conditions": {
+        "recipe_id": "refactorskyblock:crafting/bone_block"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_bone_block.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:bone_block"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_bone_block.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_bone_block"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

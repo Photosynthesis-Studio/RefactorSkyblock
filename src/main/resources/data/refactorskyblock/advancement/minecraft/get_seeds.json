@@ -1,0 +1,32 @@
+{
+  "parent": "refactorskyblock:minecraft/crafting_wooden_hoe",
+  "criteria": {
+    "get_seeds": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#refactorskyblock:seeds"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.refactorskyblock.minecraft.get_seeds.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:short_grass"
+    },
+    "title": {
+      "translate": "advancement.refactorskyblock.minecraft.get_seeds.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_seeds"
+    ]
+  ]
+}

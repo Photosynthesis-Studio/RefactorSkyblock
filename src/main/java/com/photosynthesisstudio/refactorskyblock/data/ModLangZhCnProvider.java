@@ -81,7 +81,7 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("battle", "kill_zombie", "杀死姜丝", "杀死1只僵尸证明你的石粒");
 
         addAdvancement("minecraft", "minecraft", "Minecraft", "欢迎!");
-        addAdvancement("minecraft", "get_stripped_log", "获取裸奔原木", "砍伐木头，然后使用斧子对着原木右键获得去皮原木，扒光原木的衣服");
+        addAdvancement("minecraft", "get_stripped_log_and_wood", "获取裸奔原木", "砍伐木头，然后使用斧子对着原木右键获得去皮原木，扒光原木的衣服");
         addAdvancement("minecraft", "crafting_planks", "1:1合成?!", "使用去皮原木合成木板，黑心商人");
         addAdvancement("minecraft", "crafting_wooden_hoe", "开垦荒岛", "使用3个木棍来制作木锄，开始种地");
         addAdvancement("minecraft", "place_wheat_seeds", "光合作用", "种植小麦，开始科技的第一步，也就是 光 合 作 用~");
