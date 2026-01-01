@@ -1,0 +1,32 @@
+{
+    "parent": "refactorskyblock:minecraft/crafting_planks",
+    "criteria": {
+        "crafting_wooden_hoe": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/tools/wood/wooden_hoe"
+            }
+        }
+    },
+    "display": {
+        "frame": "task",
+        "title": {
+            "translate": "advancement.refactorskyblock.minecraft.crafting_wooden_hoe.title"
+        },
+        "announce_to_chat": true,
+        "description": {
+            "translate": "advancement.refactorskyblock.minecraft.crafting_wooden_hoe.description"
+        },
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:wooden_hoe",
+            "count": 1
+        },
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "crafting_wooden_hoe"
+        ]
+    ]
+}

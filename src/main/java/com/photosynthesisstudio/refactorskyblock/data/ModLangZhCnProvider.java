@@ -78,9 +78,14 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("battle", "kill_skeleton", "你真是坏到骨子里了", "杀死1只骷髅证明你不是软骨头");
         addAdvancement("battle", "kill_spider", "腿越多生物越邪恶", "杀死1只蜘蛛证明你没有蜘蛛恐惧症");
         addAdvancement("battle", "kill_zombie", "杀死姜丝", "杀死1只僵尸证明你的石粒");
+
         addAdvancement("minecraft", "minecraft", "Minecraft", "欢迎!");
-        addAdvancement("minecraft", "get_wood", "获取去皮原木!", "挖掘木头，然后使用斧子对着原木右键获得去皮原木");
-        addAdvancement("minecraft", "get_planks", "1:1合成?!", "使用去皮原木合成木板");
+        addAdvancement("minecraft", "get_stripped_log", "获取裸奔原木", "挖掘木头，然后使用斧子对着原木右键获得去皮原木，扒光原木的衣服");
+        addAdvancement("minecraft", "crafting_planks", "1:1合成?!", "使用去皮原木合成木板，黑心商人");
+        addAdvancement("minecraft", "crafting_wooden_hoe", "开垦荒岛", "制作木锄，开始种地");
+        addAdvancement("minecraft", "place_wheat_seeds", "光合作用", "种植小麦，开始科技的第一步，也就是 光 合 作 用~");
+
+
         addAdvancement("minecraft", "get_bone_block", "头盖骨建材", "用4个骨粉合成骨块，用于各种建筑");
         addAdvancement("minecraft", "eat_bark", "不是你真吃啊?", "孩子牙口挺好, 但是嘴有点馋");
         addAdvancement("minecraft", "get_bone_bowl", "头盖骨饭碗", "用2个骨头来合成骨碗");
@@ -91,7 +96,7 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("minecraft", "get_simple_hoe", "开垦荒岛", "制作简易锄");
         addAdvancement("minecraft", "get_simple_pickaxe", "……这玩意有用吗", "制作简易镐");
         addAdvancement("minecraft", "get_simple_shovel", "小心点挖!", "制作简易锹");
-        addAdvancement("minecraft", "get_seeds", "光合作用", "种植作物, 开始科技的第一步, 也就是 光 合 作 用~");
+
         addAdvancement("minecraft", "get_beetroot", "天才!", "我是农民，这就是甜菜!");
         addAdvancement("minecraft", "get_melon_slice", "窝头咩乐", "吃瓜ing~");
         addAdvancement("minecraft", "get_pumpkin", "呱瓜", "瓜瓜瓜");
