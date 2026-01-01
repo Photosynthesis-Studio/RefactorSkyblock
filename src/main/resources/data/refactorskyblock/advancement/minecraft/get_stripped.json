@@ -1,7 +1,7 @@
 {
   "parent": "refactorskyblock:minecraft/minecraft",
   "criteria": {
-    "get_stripped_log_and_wood": {
+    "get_stripped": {
       "conditions": {
         "items": [
           {
@@ -14,19 +14,19 @@
   },
   "display": {
     "description": {
-      "translate": "advancement.refactorskyblock.minecraft.get_stripped_log_and_wood.description"
+      "translate": "advancement.refactorskyblock.minecraft.get_stripped.description"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:stripped_oak_log"
     },
     "title": {
-      "translate": "advancement.refactorskyblock.minecraft.get_stripped_log_and_wood.title"
+      "translate": "advancement.refactorskyblock.minecraft.get_stripped.title"
     }
   },
   "requirements": [
     [
-      "get_stripped_log_and_wood"
+      "get_stripped"
     ]
   ]
 }

@@ -1,6 +1,6 @@
 {
   "values": [
-    "refactorskyblock:stripped_log",
-    "refactorskyblock:stripped_wood"
+    "#refactorskyblock:stripped_log",
+    "#refactorskyblock:stripped_wood"
   ]
 }

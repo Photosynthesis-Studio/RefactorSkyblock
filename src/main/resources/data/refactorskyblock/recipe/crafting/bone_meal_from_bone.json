@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bone_bowl",
+  "group": "bone_meal",
   "show_notification": false,
   "key": {
     "#": "minecraft:bone"
   },
   "pattern": [
-    "##"
+    "#"
   ],
   "result": {
-    "id": "refactorskyblock:bone_bowl",
-    "count": 1
+    "id": "minecraft:bone_meal",
+    "count": 2
   }
 }

@@ -1,118 +1,125 @@
 {
-    "parent": "refactorskyblock:minecraft/get_stripped_log",
+    "parent": "refactorskyblock:minecraft/get_stripped",
     "criteria": {
         "acacia_planks_from_log": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/acacia_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/acacia_planks"
             }
         },
         "birch_planks_from_log": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/birch_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/birch_planks"
             }
         },
         "cherry_planks_from_log": {
             "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/cherry_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/cherry_planks"
             }
         },
         "crimson_planks_from_log": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/crimson_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/crimson_planks"
             }
         },
         "dark_oak_planks_from_log": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/dark_oak_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/dark_oak_planks"
             }
         },
         "jungle_planks_from_log": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/jungle_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/jungle_planks"
             }
         },
         "mangrove_planks_from_log": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/mangrove_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/mangrove_planks"
             }
         },
         "oak_planks_from_log": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/oak_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/oak_planks"
             }
         },
         "pale_oak_planks_from_log": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/pale_oak_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/pale_oak_planks"
             }
         },
         "spruce_planks_from_log": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/spruce_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/spruce_planks"
             }
         },
         "warped_planks_from_log": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
-                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped/warped_planks"
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_log/warped_planks"
             }
         },
+        
         "acacia_planks_from_wood": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
                 "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/acacia_planks"
             }
         },
-        "birch_planks_from_wood": {
+        "bamboo_planks_from_wood": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
                 "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/bamboo_planks"
             }
         },
-        "cherry_planks_from_wood": {
+        "birch_planks_from_wood": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
                 "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/birch_planks"
             }
         },
-        "crimson_planks_from_wood": {
+        "cherry_planks_from_wood": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
                 "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/cherry_planks"
             }
         },
-        "dark_oak_planks_from_wood": {
+        "crimson_planks_from_wood": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
                 "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/crimson_planks"
             }
         },
-        "jungle_planks_from_wood": {
+        "dark_oak_planks_from_wood": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
                 "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/dark_oak_planks"
             }
         },
-        "mangrove_planks_from_wood": {
+        "jungle_planks_from_wood": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
                 "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/jungle_planks"
             }
         },
-        "oak_planks_from_wood": {
+        "mangrove_planks_from_wood": {
              "trigger": "minecraft:recipe_crafted",
             "conditions": {
                 "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/mangrove_planks"
+            }
+        },
+        "oak_planks_from_wood": {
+             "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "refactorskyblock:crafting/wood/planks_from_stripped_wood/oak_planks"
             }
         },
         "pale_oak_planks_from_wood": {
@@ -153,6 +160,7 @@
     "requirements": [
         [
             "acacia_planks_from_log",
+            "bamboo_planks_from_wood",
             "birch_planks_from_log",
             "cherry_planks_from_log",
             "crimson_planks_from_log",
@@ -163,7 +171,9 @@
             "pale_oak_planks_from_log",
             "spruce_planks_from_log",
             "warped_planks_from_log",
+
             "acacia_planks_from_wood",
+            "bamboo_planks_from_wood",
             "birch_planks_from_wood",
             "cherry_planks_from_wood",
             "crimson_planks_from_wood",
