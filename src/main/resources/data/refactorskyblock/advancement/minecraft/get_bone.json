@@ -1,5 +1,5 @@
 {
-  "parent": "refactorskyblock:minecraft/get_plank",
+  "parent": "refactorskyblock:minecraft/crafting_wooden_sword",
   "criteria": {
     "get_bone": {
       "conditions": {

@@ -1,5 +1,5 @@
 {
-  "parent": "refactorskyblock:minecraft/crafting_wooden_hoe",
+  "parent": "refactorskyblock:minecraft/get_seeds",
   "criteria": {
     "place_wheat_seeds": {
       "trigger": "minecraft:placed_block",

@@ -1,11 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "group": "wooden_pickaxe",
+  "category": "equipment",
+  "group": "wooden_tools",
   "show_notification": false,
   "key": {
-    "#": "minecraft:stick",
-    "@": "#minecraft:planks"
+    "@": "#minecraft:planks",
+    "#": "minecraft:stick"
   },
   "pattern": [
     "@@",

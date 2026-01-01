@@ -1,5 +1,5 @@
 {
-  "parent": "refactorskyblock:minecraft/get_wood",
+  "parent": "refactorskyblock:minecraft/crafting_planks",
   "criteria": {
     "eat_barks": {
       "trigger": "minecraft:consume_item",
@@ -11,7 +11,7 @@
     }
   },
   "display": {
-    "frame": "goal",
+    "frame": "task",
     "title": {
       "translate": "advancement.refactorskyblock.minecraft.eat_bark.title"
     },

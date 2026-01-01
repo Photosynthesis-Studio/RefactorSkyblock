@@ -85,18 +85,19 @@ public class ModLangZhCnProvider extends LanguageProvider {
         addAdvancement("minecraft", "crafting_planks", "1:1合成?!", "使用去皮原木合成木板，黑心商人");
         addAdvancement("minecraft", "crafting_wooden_hoe", "开垦荒岛", "使用3个木棍来制作木锄，开始种地");
         addAdvancement("minecraft", "place_wheat_seeds", "光合作用", "种植小麦，开始科技的第一步，也就是 光 合 作 用~");
+        addAdvancement("minecraft", "get_seeds", "获取种子", "清除草可以获得种子\n小麦种子: 25%\n甜菜根种子2%\n西瓜种子2%\n南瓜种子2%");
         addAdvancement("minecraft", "crafting_wooden_pickaxe", "采矿时间到!", "用2个木板和1个木棍制作木镐开始挖掘石头，当副手放置方块时，工具可以提升方块放置距离");
         addAdvancement("minecraft", "crafting_stone_nugget", "这么强?!", "石粒! 使用皮革和石箭打磨出石粒");
-        addAdvancement("minecraft", "crafting_wooden_sword", "出击时间到!", "使用1个木板和1个木棍合成1把木剑，增加你的攻击距离");
+        addAdvancement("minecraft", "crafting_wooden_sword", "出击!", "使用1个木板和1个木棍合成1把木剑，增加你的攻击距离");
         addAdvancement("minecraft", "get_rotten_flesh", "暗面血肉", "获得腐肉，使用怪物的血肉作为物资来源");
-
-
+        addAdvancement("minecraft", "get_bone", "嘟嘟哒嘟嘟哒", "获得骨头");
         addAdvancement("minecraft", "get_bone_block", "头盖骨建材", "用4个骨粉合成骨块，用于各种建筑");
-        addAdvancement("minecraft", "eat_bark", "不是你真吃啊?", "孩子牙口挺好, 但是嘴有点馋");
         addAdvancement("minecraft", "get_bone_bowl", "头盖骨饭碗", "用2个骨头来合成骨碗");
+        addAdvancement("minecraft", "eat_bark", "不是你真吃啊?", "孩子牙口挺好, 但是嘴有点馋");
+
         addAdvancement("minecraft", "get_plant_fertilizer", "回收再利用", "用植物合成植物肥, 催熟作物");
         addAdvancement("minecraft", "get_bone_meal", "金坷垃", "这个是正宗的");
-        addAdvancement("minecraft", "get_bone", "硬骨头", "嘟嘟哒嘟嘟哒");
+
         addAdvancement("minecraft", "get_simple_axe", "这真的能用吗?", "合成一把简易斧");
         addAdvancement("minecraft", "get_simple_hoe", "开垦荒岛", "制作简易锄");
         addAdvancement("minecraft", "get_simple_pickaxe", "……这玩意有用吗", "制作简易镐");

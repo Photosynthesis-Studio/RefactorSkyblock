@@ -10,14 +10,14 @@
   },
   "display": {
     "description": {
-      "translate": "advancement.refactorskyblock.minecraft.wooden_sword.description"
+      "translate": "advancement.refactorskyblock.minecraft.crafting_wooden_sword.description"
     },
     "icon": {
       "count": 1,
       "id": "minecraft:wooden_sword"
     },
     "title": {
-      "translate": "advancement.refactorskyblock.minecraft.wooden_sword.title"
+      "translate": "advancement.refactorskyblock.minecraft.crafting_wooden_sword.title"
     }
   },
   "requirements": [

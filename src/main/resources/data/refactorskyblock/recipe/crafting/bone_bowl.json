@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "bone_bowl",
+  "group": "bone",
   "show_notification": false,
   "key": {
     "#": "minecraft:bone"
